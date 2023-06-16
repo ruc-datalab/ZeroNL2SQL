@@ -1,0 +1,5089 @@
+[
+    {
+        "question": "List all song names by singers older than average.",
+        "gold_select": "select singer.Song_Name",
+        "select_candidates": [
+            "select singer.Song_Name",
+            "select singer.Song_Name, singer.Is_male",
+            "select singer.Song_Name, singer.Song_release_year",
+            "select singer.Song_Name, singer.Age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.9925566911697388,
+            0.00012069669901393354,
+            0.00014824754907749593,
+            5.7217650464735925e-05,
+            0.00014692415425088257,
+            5.678518209606409e-05,
+            0.00019892575801350176,
+            6.4663021476008e-05
+        ],
+        "align_select": "select singer.Song_Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "list all songs names by singers older than average.",
+        "gold_select": "select singer.Song_Name",
+        "select_candidates": [
+            "select singer.Song_Name",
+            "select singer.Song_Name, singer.Song_release_year",
+            "select singer.Song_Name, singer.Is_male",
+            "select singer.Song_Name, singer.Age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.9918084740638733,
+            0.00011604386236285791,
+            0.000148696344695054,
+            5.688653982360847e-05,
+            0.00015183512005023658,
+            5.662814510287717e-05,
+            0.00019223851268179715,
+            6.281147216213867e-05
+        ],
+        "align_select": "select singer.Song_Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "list all song names by singers older than the average.",
+        "gold_select": "select singer.Song_Name",
+        "select_candidates": [
+            "select singer.Song_Name",
+            "select singer.Song_Name, singer.Song_release_year",
+            "select singer.Song_Name, singer.Is_male",
+            "select singer.Song_Name, singer.Age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.9912721514701843,
+            0.00011045391147490591,
+            0.00014870399900246412,
+            5.470747055369429e-05,
+            0.00015448295744135976,
+            5.5288997828029096e-05,
+            0.00019452450214885175,
+            6.146380474092439e-05
+        ],
+        "align_select": "select singer.Song_Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "List all song titles by singers older than the average.",
+        "gold_select": "select singer.Song_Name",
+        "select_candidates": [
+            "select singer.Song_Name",
+            "select singer.Song_Name, singer.Is_male",
+            "select singer.Song_Name, singer.Song_release_year",
+            "select singer.Song_Name, singer.Age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer",
+            "singer singer_in_concert"
+        ],
+        "align_scores": [
+            0.9884262084960938,
+            0.00012610763951670378,
+            0.0001714085228741169,
+            5.623272227239795e-05,
+            0.00015760901442263275,
+            5.549236448132433e-05,
+            0.0002212591643910855,
+            6.263925752136856e-05
+        ],
+        "align_select": "select singer.Song_Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "list all songs by singers older than average.",
+        "gold_select": "select singer.Song_Name",
+        "select_candidates": [
+            "select singer.Song_Name",
+            "select singer.Song_Name, singer.Song_release_year",
+            "select singer.Song_Name, singer.Is_male",
+            "select singer.Song_Name, singer.Age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer",
+            "singer singer_in_concert"
+        ],
+        "align_scores": [
+            0.9852801561355591,
+            8.634669211460277e-05,
+            0.0001618958340259269,
+            5.8834313676925376e-05,
+            0.00014740209735464305,
+            5.7630160881672055e-05,
+            0.00018859362171497196,
+            6.109681271482259e-05
+        ],
+        "align_select": "select singer.Song_Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Find the number of concerts have been held in the largest stadium.",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select count(*), stadium.Stadium_ID",
+            "select concert.Stadium_ID, count(*)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.6166883707046509,
+            0.977961003780365,
+            0.025153938680887222,
+            0.002237434731796384,
+            0.0013625932624563575,
+            0.000287972652586177,
+            0.8864850997924805,
+            0.012898745015263557
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the number of concerts that happened in the largest stadium.",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select concert.Stadium_ID, count(*)",
+            "select count(*), stadium.Stadium_ID"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.407230019569397,
+            0.985765278339386,
+            0.012874542735517025,
+            0.001989176496863365,
+            0.767755389213562,
+            0.011672011576592922,
+            0.001150529133155942,
+            0.000299969338811934
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the number of concerts in the largest stadium.",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select count(*), stadium.Stadium_ID",
+            "select avg(concert.concert_Name)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.1792721152305603,
+            0.9908322691917419,
+            0.008219188079237938,
+            0.00024720976944081485,
+            0.0005773569573648274,
+            0.0001809852838050574,
+            0.00029477692442014813,
+            0.00049069884698838
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Find the number of concerts that have had in the largest stadium?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select count(*), stadium.Stadium_ID",
+            "select concert.Stadium_ID, count(*)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.6390151977539062,
+            0.964369535446167,
+            0.07139261811971664,
+            0.00423072325065732,
+            0.0025233353953808546,
+            0.00046001069131307304,
+            0.8686434626579285,
+            0.017409728839993477
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the total of concerts performed in the biggest stadium.",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select sum(concert.concert_Name)",
+            "select count(*), stadium.Name",
+            "select avg(concert.concert_Name)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.9490395188331604,
+            0.3933842182159424,
+            0.0007747325580567122,
+            0.0004609085444826633,
+            0.0012302938848733902,
+            0.010896913707256317,
+            0.0005390974693000317,
+            0.0003574552247300744
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "How many concerts have taken place in the largest stadium?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select concert.Stadium_ID, count(*)",
+            "select count(*), stadium.Stadium_ID"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.8774960041046143,
+            0.12844318151474,
+            0.0017004229594022036,
+            0.016919497400522232,
+            0.013315020129084587,
+            0.7363497614860535,
+            0.000314094009809196,
+            0.001312156324274838
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the number of concerts that took place in the biggest stadium?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select concert.Stadium_ID, count(*)",
+            "select count(*), stadium.Stadium_ID"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.22951538860797882,
+            0.8518980145454407,
+            0.013585108332335949,
+            0.0014988540206104517,
+            0.9141479134559631,
+            0.01000334694981575,
+            0.0012950783129781485,
+            0.0002670147514436394
+        ],
+        "align_select": "select concert.Stadium_ID, count(*)",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "How many concerts were performed in the largest stadium?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select avg(concert.concert_Name)",
+            "select concert.Stadium_ID, count(*)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.8985434174537659,
+            0.12093780189752579,
+            0.0018258829368278384,
+            0.017574453726410866,
+            0.0004795709974132478,
+            0.00035100500099360943,
+            0.012656612321734428,
+            0.7772303819656372
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the number of concerts that have occurred in the biggest stadium.",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), stadium.Name",
+            "select concert.Stadium_ID, count(*)",
+            "select count(*), stadium.Stadium_ID"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.29799968004226685,
+            0.9710704684257507,
+            0.01851544715464115,
+            0.0020821066573262215,
+            0.9392626285552979,
+            0.018648315221071243,
+            0.0012469568755477667,
+            0.00029482608078978956
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which are number of bands performed in the large stadium?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(distinct concert.concert_Name)",
+            "select count(*), stadium.Name",
+            "select count(*), stadium.Stadium_ID"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "stadium concert",
+        "table_candidates": [
+            "stadium concert",
+            "stadium singer concert"
+        ],
+        "align_scores": [
+            0.9933805465698242,
+            0.0012625308008864522,
+            0.006423922721296549,
+            0.0002301274798810482,
+            0.0002735723974183202,
+            0.011690894141793251,
+            0.00016121126827783883,
+            0.0006992665585130453
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which car model offers the weakest engine?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.Model, model_list.Model",
+            "select car_names.Model (car_names.Make)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data",
+            "countries cars_data"
+        ],
+        "align_scores": [
+            0.9888035655021667,
+            7.330452353926376e-05,
+            0.0005370044964365661,
+            6.015781036694534e-05,
+            0.00031220659730024636,
+            6.139832112239674e-05,
+            0.0022993541788309813,
+            6.16000615991652e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which car model has the least powerful engine?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.Model, model_list.Model",
+            "select car_names.Model (car_names.Make)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data",
+            "countries cars_data"
+        ],
+        "align_scores": [
+            0.9920487999916077,
+            6.751147157046944e-05,
+            0.00043580587953329086,
+            5.641771713271737e-05,
+            0.0002955792297143489,
+            5.889550084248185e-05,
+            0.0017192732775583863,
+            5.6752702221274376e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the model of the car model with the weakest engine?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select model_list.Model, car_names.Model",
+            "select car_names.Model",
+            "select model_list.Model, model_list.ModelId"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "continents model_list car_names cars_data",
+            "countries model_list car_names cars_data",
+            "countries car_names cars_data",
+            "model_list car_names",
+            "model_list cars_data"
+        ],
+        "align_scores": [
+            0.9918050765991211,
+            6.644782843068242e-05,
+            0.0004035990859847516,
+            5.576976764132269e-05,
+            0.9929977655410767,
+            6.55440308037214e-05,
+            0.0005986939650028944,
+            6.285826384555548e-05
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "which car model has the weakest engine?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model, model_list.Model"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.993083119392395,
+            6.505173223558813e-05,
+            0.00040349483606405556,
+            5.621396121568978e-05,
+            0.000550722936168313,
+            6.143539940239862e-05,
+            0.00031398620922118425,
+            5.7521170674590394e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the model of the car that is lighter than the average.",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select model_list.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.Model, model_list.Model"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "continents model_list car_names cars_data",
+            "car_names cars_data",
+            "countries car_names cars_data",
+            "car_makers car_names cars_data"
+        ],
+        "align_scores": [
+            0.9722381830215454,
+            7.139803346944973e-05,
+            0.9443551898002625,
+            7.636862574145198e-05,
+            0.00017611445218790323,
+            6.55351541354321e-05,
+            0.00018723885295912623,
+            6.423587183235213e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which is the car model that is lighter than the average?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select model_list.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.Model, model_list.Model"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "car_names cars_data",
+            "continents model_list car_names cars_data",
+            "countries car_names cars_data",
+            "car_makers car_names cars_data"
+        ],
+        "align_scores": [
+            0.9511924386024475,
+            7.040053606033325e-05,
+            0.9706563353538513,
+            7.688230834901333e-05,
+            0.0002074518270092085,
+            6.444098107749596e-05,
+            0.00019866893126163632,
+            6.158126780064777e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the model of the car lighter than average?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select model_list.ModelId, model_list.Model",
+            "select model_list.Model, car_names.Model",
+            "select car_names.Model"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "model_list car_names",
+            "model_list cars_data",
+            "car_makers model_list car_names cars_data",
+            "continents model_list car_names cars_data",
+            "countries car_names cars_data",
+            "car_makers model_list car_names"
+        ],
+        "align_scores": [
+            0.9940040707588196,
+            0.00010625517461448908,
+            0.0002304807712789625,
+            6.980237230891362e-05,
+            0.0002885503345169127,
+            6.510964158223942e-05,
+            0.9942649006843567,
+            0.00011356852337485179
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the car model which has lighter than average?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select model_list.Model",
+            "select car_names.Model, car_names.Make",
+            "select distinct car_names.Model"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "countries car_names cars_data",
+            "continents model_list car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9657054543495178,
+            8.895793143892661e-05,
+            0.9739536046981812,
+            9.76091469055973e-05,
+            0.00023291258548852056,
+            7.571774040115997e-05,
+            0.03371939808130264,
+            7.74273430579342e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the model of the car lighter than average.",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select car_names.Model",
+            "select model_list.ModelId, model_list.Model",
+            "select model_list.Model, car_names.Model"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "model_list car_names",
+            "car_makers model_list car_names cars_data",
+            "continents model_list car_names cars_data",
+            "model_list cars_data",
+            "countries car_names cars_data",
+            "car_makers model_list car_names"
+        ],
+        "align_scores": [
+            0.9941199421882629,
+            0.0001024068333208561,
+            0.9945289492607117,
+            0.00010595576895866543,
+            0.00021858753461856395,
+            6.964154454180971e-05,
+            0.0002661926846485585,
+            6.295766797848046e-05
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the model of the lighter car than the average?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select car_names.Model",
+            "select model_list.ModelId, model_list.Model",
+            "select model_list.Model, car_names.Model"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "model_list cars_data",
+            "car_makers model_list car_names cars_data",
+            "continents model_list car_names cars_data",
+            "car_makers model_list cars_data",
+            "countries car_names cars_data",
+            "car_names cars_data",
+            "model_list car_names"
+        ],
+        "align_scores": [
+            0.9928603768348694,
+            0.00014520756667479873,
+            0.9932710528373718,
+            0.00016703028813935816,
+            0.00020671241509262472,
+            6.967043736949563e-05,
+            0.0002558687992859632,
+            6.726431456627324e-05
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the model for the car that is lighter than usual?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select model_list.ModelId, model_list.Model",
+            "select model_list.Model, car_names.Model",
+            "select model_list.Model (refers to car_names.Model)"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "model_list cars_data",
+            "continents model_list car_names cars_data",
+            "countries car_names cars_data",
+            "car_names cars_data",
+            "car_makers car_names cars_data",
+            "car_makers model_list cars_data"
+        ],
+        "align_scores": [
+            0.9923658967018127,
+            9.757350198924541e-05,
+            0.00018652965081855655,
+            7.74032887420617e-05,
+            0.0002280826447531581,
+            7.306689076358452e-05,
+            0.055731382220983505,
+            0.00011365832324372604
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "what is the make of the most powerful cars that have three cylinders and what is the power?",
+        "gold_select": "select cars_data.Horsepower, car_names.Make",
+        "select_candidates": [
+            "select car_names.Make, cars_data.Horsepower",
+            "select car_names.Make, t4.c4",
+            "select car_names.Model, car_names.Make, cars_data.Horsepower",
+            "select car_names.Model, cars_data.Horsepower"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "car_makers car_names cars_data",
+            "model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data",
+            "car_makers cars_data"
+        ],
+        "align_scores": [
+            0.9905481934547424,
+            0.9825958013534546,
+            0.002774028107523918,
+            0.008564713411033154,
+            0.0005583151942119002,
+            0.0004142375255469233,
+            0.9922080636024475,
+            0.9872679114341736
+        ],
+        "align_select": "select car_names.Make, cars_data.Horsepower",
+        "align_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which model saves the most gasoline?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select model_list.ModelId, model_list.Model",
+            "select model_list.Model, cars_data.MPG",
+            "select model_list.Model, car_names.Model"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list cars_data",
+            "car_makers model_list cars_data",
+            "model_list car_names cars_data",
+            "countries model_list cars_data",
+            "car_names cars_data"
+        ],
+        "align_scores": [
+            0.9935963153839111,
+            0.995236873626709,
+            0.0003359908005222678,
+            0.000506316137034446,
+            0.0030013148207217455,
+            0.005383587442338467,
+            0.0003043639298994094,
+            0.00035898774513043463
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which car has the most fuel efficiency?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model-, car_names.Make"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "car_makers car_names cars_data",
+            "model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9707410335540771,
+            7.347879000008106e-05,
+            0.0013965154066681862,
+            5.98665137658827e-05,
+            0.0041521345265209675,
+            6.53793613309972e-05,
+            0.00039290718268603086,
+            5.1658222218975425e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which car has the best gas mileage?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model-, car_names.Make"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "car_makers car_names cars_data",
+            "model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9477643370628357,
+            7.20586467650719e-05,
+            0.0019197086803615093,
+            6.14386226516217e-05,
+            0.0077127693220973015,
+            6.51958107482642e-05,
+            0.00043220483348704875,
+            5.3395822760649025e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the car model that is most gas efficient?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model (cars_data.MPG)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9909560084342957,
+            0.994216799736023,
+            0.00047973787877708673,
+            0.0005514351068995893,
+            0.0005963810835964978,
+            0.0008070674375630915,
+            0.007843028753995895,
+            0.011306166648864746
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the car model that is most fuel-efficient?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model (cars_data.MPG)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9898620843887329,
+            7.64869837439619e-05,
+            0.000647239328827709,
+            5.943000360275619e-05,
+            0.0007410940597765148,
+            6.585427763639018e-05,
+            0.010113751515746117,
+            7.011767593212426e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the car model that gets the best fuel economy?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model (cars_data.MPG)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9877923130989075,
+            7.728174387011677e-05,
+            0.0005849080625921488,
+            6.0690865211654454e-05,
+            0.0007470278651453555,
+            6.716823554597795e-05,
+            0.020843643695116043,
+            7.191463373601437e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the car model with the best fuel efficiency?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model (cars_data.MPG)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9855844378471375,
+            7.956715853651986e-05,
+            0.0007311660447157919,
+            6.118370220065117e-05,
+            0.0007984464755281806,
+            6.826710159657523e-05,
+            0.012412510812282562,
+            7.204477151390165e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "what is the car model that is most gas efficient?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.MakeId, car_names.Model",
+            "select car_names.Model (cars_data.MPG)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "car_makers model_list car_names cars_data",
+            "countries car_names cars_data",
+            "continents car_names cars_data"
+        ],
+        "align_scores": [
+            0.9909560084342957,
+            0.994216799736023,
+            0.00047973787877708673,
+            0.0005514351068995893,
+            0.0005963810835964978,
+            0.0008070674375630915,
+            0.007843028753995895,
+            0.011306166648864746
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "How many cars have a larger accelerate than the most powerful car?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), cars_data.Accelerate",
+            "select count(*), cars_data.Id",
+            "select count(*), cars_data.Horsepower"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "cars_data",
+        "table_candidates": [
+            "cars_data"
+        ],
+        "align_scores": [
+            0.9806491136550903,
+            0.0002623453619889915,
+            0.0003629910643212497,
+            0.0001489931164542213,
+            0.00035020028008148074,
+            0.00015672585868742317,
+            0.0003290322201792151,
+            0.00020381917420309037
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Show the number of the cars that have a larger accelerate than the most powerful car?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), cars_data.Id",
+            "select count(*), cars_data.Horsepower",
+            "select count(*), cars_data.Accelerate"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "cars_data",
+        "table_candidates": [
+            "cars_data",
+            "car_names cars_data",
+            "model_list cars_data",
+            "car_makers cars_data"
+        ],
+        "align_scores": [
+            0.9764589071273804,
+            0.008675986900925636,
+            0.0003079402958974242,
+            0.01113210804760456,
+            0.0003266726853325963,
+            0.010181049816310406,
+            0.0004511528240982443,
+            0.23601122200489044
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "How many cars have accelerate faster than the most powerful car?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), cars_data.Id",
+            "select count(distinct cars_data.Id)",
+            "select count(*), cars_data.Horsepower"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "cars_data",
+        "table_candidates": [
+            "cars_data"
+        ],
+        "align_scores": [
+            0.9609772562980652,
+            0.00024073464737739414,
+            0.0003281000244896859,
+            0.0001619328832020983,
+            0.00901434849947691,
+            9.08976944629103e-05,
+            0.00034813268575817347,
+            0.00022756026010029018
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "How many cars have a higher rate of acceleration than the most powerful?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), cars_data.Horsepower",
+            "select count(*), cars_data.Accelerate",
+            "select count(*), cars_data.Id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "cars_data",
+        "table_candidates": [
+            "cars_data"
+        ],
+        "align_scores": [
+            0.9840333461761475,
+            0.0007389438687823713,
+            0.0004196410591248423,
+            0.00021223232033662498,
+            0.000477722060168162,
+            0.00021932637901045382,
+            0.0003490355738904327,
+            0.00016028211393859237
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "For the cars with 4 cylinders, which model is strongest?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, cars_data.Cylinders",
+            "select car_names.Model, car_names.Make",
+            "select car_names.Model, cars_data.Edispl"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "car_makers car_names cars_data",
+            "car_makers cars_data",
+            "model_list cars_data",
+            "continents car_names cars_data",
+            "countries car_names cars_data",
+            "countries cars_data"
+        ],
+        "align_scores": [
+            0.9777135252952576,
+            0.9923987984657288,
+            0.0002472821215633303,
+            0.00043311878107488155,
+            0.00042829170706681907,
+            0.00043533294228836894,
+            0.0005404603434726596,
+            0.0007897730683907866
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which model is most powerful for 4-cylinder cars",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select model_list.Model",
+            "select model_list.ModelId, model_list.Model",
+            "select model_list.Model, cars_data.Edispl",
+            "select model_list.Model, cars_data.MPG"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "model_list car_names cars_data",
+            "model_list cars_data",
+            "car_makers model_list cars_data",
+            "countries car_names cars_data",
+            "car_names cars_data",
+            "continents model_list cars_data",
+            "car_makers car_names cars_data"
+        ],
+        "align_scores": [
+            0.9928868412971497,
+            0.00011220895976293832,
+            0.00030961475567892194,
+            8.12215221230872e-05,
+            0.0008203572360798717,
+            9.909943037200719e-05,
+            0.00018733243632595986,
+            6.53541719657369e-05
+        ],
+        "align_select": "select model_list.Model",
+        "align_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+    },
+    {
+        "question": "All four-cylinder cars, Which car is most powerful?",
+        "gold_select": "select car_names.Model",
+        "select_candidates": [
+            "select car_names.Model",
+            "select car_names.Model, car_names.Make",
+            "select car_names.Model, cars_data.Cylinders",
+            "select cars_data.MPG"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_names cars_data",
+        "table_candidates": [
+            "car_names cars_data",
+            "model_list car_names cars_data",
+            "cars_data",
+            "countries car_names cars_data",
+            "car_makers cars_data",
+            "countries cars_data",
+            "model_list cars_data"
+        ],
+        "align_scores": [
+            0.9840137362480164,
+            9.676800982560962e-05,
+            0.0005911077023483813,
+            7.102074596332386e-05,
+            0.0008237682632170618,
+            7.274160452652723e-05,
+            0.008308726362884045,
+            6.799150287406519e-05
+        ],
+        "align_select": "select car_names.Model",
+        "align_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the manager\u2019s the name and district of stores that has the largest quantity.",
+        "gold_select": "select shop.Manager_name, shop.District",
+        "select_candidates": [
+            "select shop.Manager_name, shop.District",
+            "select shop.Name, shop.District",
+            "select shop.Manager_name, shop.Location",
+            "select shop.Location, shop.Manager_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.8147578239440918,
+            0.9454792737960815,
+            0.003675260115414858,
+            0.004545520059764385,
+            0.7906081676483154,
+            0.9373165369033813,
+            0.22153237462043762,
+            0.8660076260566711
+        ],
+        "align_select": "select shop.Manager_name, shop.District",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the manager's name and district of the shop that sells the most items?",
+        "gold_select": "select shop.Manager_name, shop.District",
+        "select_candidates": [
+            "select shop.Manager_name, shop.District",
+            "select shop.Name, shop.District",
+            "select shop.Manager_name, shop.Location",
+            "select shop.Location, shop.Manager_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.9940965175628662,
+            0.9916559457778931,
+            0.009498109109699726,
+            0.0025261850096285343,
+            0.9887182712554932,
+            0.977551281452179,
+            0.990666925907135,
+            0.9703518152236938
+        ],
+        "align_select": "select shop.Manager_name, shop.District",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find out which stores sell more products than the average store.",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.Location",
+            "select shop.Name, shop.Shop_ID",
+            "select shop.Name, shop.District"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.4673919081687927,
+            0.00011997688125120476,
+            0.00026107626035809517,
+            6.718801887473091e-05,
+            0.00034234041231684387,
+            9.155465522781014e-05,
+            0.0002364830143051222,
+            7.15857240720652e-05
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which are the stores that have more products above average?",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.Location",
+            "select shop.Name, shop.Shop_ID",
+            "select shop.Name, shop.District"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.424253910779953,
+            0.0006099040037952363,
+            0.00027162733022123575,
+            0.00010203096462646499,
+            0.0005962924333289266,
+            0.00016409029194619507,
+            0.00027558187139220536,
+            0.00011659136362140998
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Find the names of stores that have more products than the average store?",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.Manager_name",
+            "select shop.Name, shop.District",
+            "select shop.Name, shop.Location"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.7787030339241028,
+            0.00028881209436804056,
+            0.0002505347947590053,
+            8.85886765900068e-05,
+            0.0002533485821913928,
+            7.876979361753911e-05,
+            0.0003039588045794517,
+            7.591011672047898e-05
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which shops sell more products above the average? Give me the shop names.",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.District",
+            "select shop.Name, shop.Location",
+            "select shop.Name, shop.Manager_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.9382839798927307,
+            7.313011155929416e-05,
+            0.00026831525610759854,
+            8.052757766563445e-05,
+            0.00023634823446627706,
+            7.430008554365486e-05,
+            0.0003801755083259195,
+            7.744773029116914e-05
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which shops have more items than the average? Give their names.",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.Manager_name",
+            "select shop.Name, shop.District",
+            "select shop.Name, shop.Location"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.9513498544692993,
+            7.009026012383401e-05,
+            0.0003940497408621013,
+            9.146321099251509e-05,
+            0.00023920013336464763,
+            7.818950689397752e-05,
+            0.00024232338182628155,
+            7.063071825541556e-05
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which shops sell more units than average? Give me the shop names.",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.District",
+            "select shop.Name, shop.Location",
+            "select shop.Name, shop.Manager_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop",
+            "shop hiring"
+        ],
+        "align_scores": [
+            0.9654250144958496,
+            0.721861720085144,
+            0.0002491854829713702,
+            0.0002995306858792901,
+            0.00023865523689892143,
+            0.0001986295246751979,
+            0.00034578979830257595,
+            0.0005579726421274245
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Which shops have more products than average? Give me the shop names.",
+        "gold_select": "select shop.Name",
+        "select_candidates": [
+            "select shop.Name",
+            "select shop.Name, shop.Location",
+            "select shop.Name, shop.District",
+            "select shop.Name, shop.District, shop.Number_products"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "shop",
+        "table_candidates": [
+            "shop"
+        ],
+        "align_scores": [
+            0.9201298952102661,
+            8.15699459053576e-05,
+            0.0002542957372497767,
+            7.293810631381348e-05,
+            0.0002692362177185714,
+            8.02699796622619e-05,
+            0.00015827646711841226,
+            7.07079452695325e-05
+        ],
+        "align_select": "select shop.Name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What are the customer ids, total spent, membership levels of those who have spent the most on museum tickets in total?",
+        "gold_select": "select visit.visitor_ID, visitor.Name, visitor.Level_of_membership",
+        "select_candidates": [
+            "select visit.visitor_ID, sum(visit.Total_spent), visitor.Level_of_membership",
+            "select visit.visitor_ID, visit.Total_spent, visitor.Level_of_membership",
+            "select visitor.ID, sum(visit.Total_spent), visitor.Level_of_membership",
+            "select visit.visitor_ID, sum(visit.Total_spent), visit.Num_of_Ticket"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "visitor visit",
+        "table_candidates": [
+            "visitor visit"
+        ],
+        "align_scores": [
+            0.030297232791781425,
+            0.00010499354539206252,
+            0.02096806839108467,
+            0.0001154681303887628,
+            0.624828577041626,
+            0.00012004451855318621,
+            0.00023408605193253607,
+            7.638304668944329e-05
+        ],
+        "align_select": "select visitor.ID, sum(visit.Total_spent), visitor.Level_of_membership",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the id, name and membership level of visitors who have spent the most in all museum tickets?",
+        "gold_select": "select visit.visitor_ID, visitor.Name, visitor.Level_of_membership",
+        "select_candidates": [
+            "select visit.visitor_ID, visitor.Name, visitor.Level_of_membership",
+            "select visitor.ID, visitor.Name, visitor.Level_of_membership",
+            "select visit.Museum_ID, visitor.Name, visitor.Level_of_membership",
+            "select visit.visitor_ID, visitor.ID, visitor.Name, visitor.Level_of_membership"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "visitor visit",
+        "table_candidates": [
+            "visitor visit"
+        ],
+        "align_scores": [
+            0.9027487635612488,
+            0.6408770084381104,
+            0.9515076875686646,
+            0.8799360394477844,
+            0.0006507296930067241,
+            0.0007529649883508682,
+            0.0008096364326775074,
+            0.000674495124258101
+        ],
+        "align_select": "select visit.visitor_ID, visitor.Name, visitor.Level_of_membership",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the country code and first name of the oldest.",
+        "gold_select": "select players.first_name, players.country_code",
+        "select_candidates": [
+            "select players.country_code, players.first_name",
+            "select players.first_name, players.country_code",
+            "select players.last_name, players.country_code",
+            "select t2.c5, players.first_name"
+        ],
+        "select_labels": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players"
+        ],
+        "align_scores": [
+            0.9957555532455444,
+            8.14771992736496e-05,
+            0.9960225820541382,
+            8.589254139224067e-05,
+            0.000628685811534524,
+            7.979961083037779e-05,
+            0.0009044597391039133,
+            9.381440031575039e-05
+        ],
+        "align_select": "select players.country_code, players.first_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the first name and the country code of the oldest?",
+        "gold_select": "select players.first_name, players.country_code",
+        "select_candidates": [
+            "select players.first_name, players.country_code",
+            "select players.first_name, players.country_code, players.player_id",
+            "select players.first_name.c1, players.country_code",
+            "select players.first_name, players.country_code, players.last_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players"
+        ],
+        "align_scores": [
+            0.9956633448600769,
+            8.808568236418068e-05,
+            0.0001648006000323221,
+            6.270517769735307e-05,
+            0.00045094703091308475,
+            8.329968113685027e-05,
+            0.0002459489624015987,
+            6.96580100338906e-05
+        ],
+        "align_select": "select players.first_name, players.country_code",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the first name and country code of the one who is the oldest?",
+        "gold_select": "select players.first_name, players.country_code",
+        "select_candidates": [
+            "select players.first_name, players.country_code",
+            "select players.first_name, players.country_code, players.player_id",
+            "select players.first_name, players.country_code, players.last_name",
+            "select players.first_name, players.country_code, players.hand"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players"
+        ],
+        "align_scores": [
+            0.9908530116081238,
+            9.32876137085259e-05,
+            0.00014986870519351214,
+            6.925703200977296e-05,
+            0.00029468501452356577,
+            7.44026037864387e-05,
+            0.0002664844796527177,
+            8.029155287658796e-05
+        ],
+        "align_select": "select players.first_name, players.country_code",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the first name and country code of player who made the most tour?",
+        "gold_select": "select players.country_code, players.first_name",
+        "select_candidates": [
+            "select players.first_name, players.country_code",
+            "select players.first_name, players.last_name, players.country_code",
+            "select players.player_id, players.first_name, players.country_code",
+            "select players.first_name, players.country_code, players.player_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "players rankings",
+        "table_candidates": [
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9805499911308289,
+            9.979985043173656e-05,
+            0.001235390198417008,
+            9.766035509528592e-05,
+            0.0002853946352843195,
+            8.213036198867485e-05,
+            0.00021087641653139144,
+            6.983639468671754e-05
+        ],
+        "align_select": "select players.first_name, players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the first name and country code of the player who did the most tours.",
+        "gold_select": "select players.country_code, players.first_name",
+        "select_candidates": [
+            "select players.first_name, players.country_code",
+            "select players.first_name, players.country_code, players.player_id",
+            "select players.first_name, players.last_name, players.country_code",
+            "select players.first_name, players.country_code, players.last_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "players rankings",
+        "table_candidates": [
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9907000660896301,
+            8.764689846429974e-05,
+            0.0001960655936272815,
+            6.456055416492745e-05,
+            0.0016415759455412626,
+            8.683088526595384e-05,
+            0.0011967249447479844,
+            7.391993858618662e-05
+        ],
+        "align_select": "select players.first_name, players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name of the winner who had the highest ranking and took part in the Australian Open tournament.",
+        "gold_select": "select matches.winner_name",
+        "select_candidates": [
+            "select matches.winner_name",
+            "select matches.winner_name, matches.winner_entry",
+            "select matches.tourney_name, matches.winner_name",
+            "select matches.winner_name, matches.winner_hand"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches rankings",
+            "players matches rankings"
+        ],
+        "align_scores": [
+            0.6730155944824219,
+            0.1854880005121231,
+            0.0002592551172710955,
+            0.0002874174388125539,
+            0.00032700205338187516,
+            0.0002864900161512196,
+            0.00025386165361851454,
+            0.00023782432253938168
+        ],
+        "align_select": "select matches.winner_name",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Find the name of the highest ranked winner participating in the Australian Open tournament?",
+        "gold_select": "select matches.winner_name",
+        "select_candidates": [
+            "select matches.winner_name",
+            "select matches.winner_name, rankings.player_id",
+            "select matches.tourney_name, matches.winner_name",
+            "select matches.winner_name, matches.winner_rank"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches rankings",
+            "matches"
+        ],
+        "align_scores": [
+            0.9880727529525757,
+            0.0006279356894083321,
+            0.001263643498532474,
+            0.00021782399562653154,
+            0.0003816995886154473,
+            0.00013338007556740195,
+            0.0008757425821386278,
+            0.0001250846398761496
+        ],
+        "align_select": "select matches.winner_name",
+        "align_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name of winner and loser who played in the match that lasted the longest?",
+        "gold_select": "select matches.winner_name, matches.loser_name",
+        "select_candidates": [
+            "select matches.winner_name, matches.loser_name",
+            "select t1.c 27, matches.loser_name",
+            "select matches.winner_rank, matches.loser_name",
+            "select matches.winner_hand, matches.loser_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9717288613319397,
+            0.00012851662177126855,
+            0.0007512705633416772,
+            8.255697321146727e-05,
+            0.0010364387417212129,
+            8.817359048407525e-05,
+            0.0006702317041344941,
+            7.713036757195368e-05
+        ],
+        "align_select": "select matches.winner_name, matches.loser_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Who are the losers and winners played in the match that lasted the longest?",
+        "gold_select": "select matches.winner_name, matches.loser_name",
+        "select_candidates": [
+            "select matches.loser_name, matches.winner_name",
+            "select matches.loser_name, matches.winner_hand",
+            "select matches.loser_name, matches.winner_age",
+            "select matches.loser_name, matches.loser_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9828779697418213,
+            7.882765930844471e-05,
+            0.004733429756015539,
+            6.841144931968302e-05,
+            0.0007891358691267669,
+            7.980158989084885e-05,
+            0.00048596947453916073,
+            0.0001102926762541756
+        ],
+        "align_select": "select matches.loser_name, matches.winner_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the names of loser and winner who have played a game that lasted the longest.",
+        "gold_select": "select matches.winner_name, matches.loser_name",
+        "select_candidates": [
+            "select matches.loser_name, matches.winner_name",
+            "select t1.c 8, matches.winner_name",
+            "select matches.loser_name, t1.c 27",
+            "select matches.loser_name, matches.loser_ioc"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.8874215483665466,
+            9.475347906118259e-05,
+            0.0006926447385922074,
+            7.532488234573975e-05,
+            0.0005189085495658219,
+            0.00010719163401518017,
+            0.000519395456649363,
+            9.40678219194524e-05
+        ],
+        "align_select": "select matches.loser_name, matches.winner_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Who are the loser and winner played in the longest match?",
+        "gold_select": "select matches.winner_name, matches.loser_name",
+        "select_candidates": [
+            "select matches.loser_name, matches.winner_name",
+            "select matches.loser_name, matches.winner_hand",
+            "select matches.loser_name, matches.winner_age",
+            "select matches.loser_name, matches.tourney_date"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9809877872467041,
+            7.916967297205701e-05,
+            0.0017295206198468804,
+            6.306498107733205e-05,
+            0.0005276225274428725,
+            6.985471554799005e-05,
+            0.00037640330265276134,
+            7.253545481944457e-05
+        ],
+        "align_select": "select matches.loser_name, matches.winner_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "First name, middle name and last name of the student whose registration was the earliest.",
+        "gold_select": "select Students.first_name, Students.middle_name, Students.last_name",
+        "select_candidates": [
+            "select Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.student_id, Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.first_name., Students.middle_name, Students.last_name",
+            "select Students.first_name, Students.middle_name, Students.last_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Students",
+        "table_candidates": [
+            "Students Student_Enrolment"
+        ],
+        "align_scores": [
+            0.991439938545227,
+            7.217789243441075e-05,
+            0.00032562206615693867,
+            8.214986883103848e-05,
+            0.04990416392683983,
+            9.404495358467102e-05,
+            0.991439938545227,
+            7.217789243441075e-05
+        ],
+        "align_select": "select Students.first_name, Students.middle_name, Students.last_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Full name of students who register earliest.",
+        "gold_select": "select Students.first_name, Students.middle_name, Students.last_name",
+        "select_candidates": [
+            "select Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.current_address_id, Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.current_address_id, Students.first_name, Students.last_name",
+            "select Students.current_address_id, Students.middle_name, Students.last_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Students",
+        "table_candidates": [
+            "Students Student_Enrolment"
+        ],
+        "align_scores": [
+            0.9932790398597717,
+            7.277808617800474e-05,
+            0.00021941379236523062,
+            7.884450315032154e-05,
+            0.00022877853189129382,
+            7.823455962352455e-05,
+            0.00022801700106356293,
+            9.158958710031584e-05
+        ],
+        "align_select": "select Students.first_name, Students.middle_name, Students.last_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the first, middle, and last name of the earliest_registered student?",
+        "gold_select": "select Students.first_name, Students.middle_name, Students.last_name",
+        "select_candidates": [
+            "select Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.student_id, Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.first_name., Students.middle_name, Students.last_name"
+        ],
+        "select_labels": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            1.0
+        ],
+        "gold_table": "Students",
+        "table_candidates": [
+            "Students Student_Enrolment",
+            "Students"
+        ],
+        "align_scores": [
+            0.983805239200592,
+            0.983805239200592,
+            0.983805239200592,
+            0.983805239200592,
+            0.00027123320614919066,
+            0.00027123320614919066,
+            0.026331180706620216,
+            0.026331180706620216
+        ],
+        "align_select": "select Students.first_name, Students.middle_name, Students.last_name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "When is the earliest release of a transcription, and what details can you tell me?",
+        "gold_select": "select Transcripts.transcript_date, Transcripts.other_details",
+        "select_candidates": [
+            "select t8.c5, t8.c6",
+            "select t7.c9, Student_Enrolment.degree_program_id0",
+            "select t8.c5, t9.c6",
+            "select t8.c5, t10.c6"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Transcripts",
+        "table_candidates": [
+            "Transcripts",
+            "Transcript_Contents",
+            "Student_Enrolment_Courses",
+            "Courses Student_Enrolment_Courses",
+            "Student_Enrolment",
+            "Courses Student_Enrolment"
+        ],
+        "align_scores": [
+            0.008420726284384727,
+            6.500920426333323e-05,
+            0.0004139953525736928,
+            7.968904537847266e-05,
+            0.012026689946651459,
+            6.45972540951334e-05,
+            0.0049110278487205505,
+            6.18275735178031e-05
+        ],
+        "align_select": "select t8.c5, t8.c6",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List the best 3 TV series. List the TV series's Episode and Rating.",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode.c1, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Share"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9910197854042053,
+            5.853256880072877e-05,
+            0.0004003873618785292,
+            6.582264177268371e-05,
+            0.0006334123900160193,
+            6.483498145826161e-05,
+            0.0003395428939256817,
+            6.115499854786322e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the episode and rating for the best 3 seriers?",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode, TV_series.Air_Date, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Share"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9954283237457275,
+            6.907728675287217e-05,
+            0.00022403753246180713,
+            6.257423956412822e-05,
+            0.0002449398743920028,
+            6.527855293825269e-05,
+            0.0002952480281237513,
+            6.715037307003513e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the production code and channel for the latest animated show.",
+        "gold_select": "select Cartoon.Production_code, Cartoon.Channel",
+        "select_candidates": [
+            "select Cartoon.Production_code, Cartoon.Channel",
+            "select max(Cartoon.Production_code), max(Cartoon.Channel)",
+            "select Cartoon.Production_code, Cartoon.Channel",
+            "select Cartoon.Production_code.c6, Cartoon.Production_code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-EXCEPT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Cartoon",
+        "table_candidates": [
+            "Cartoon",
+            "TV_series Cartoon",
+            "TV_Channel TV_series Cartoon"
+        ],
+        "align_scores": [
+            0.006974067073315382,
+            0.00010899498738581315,
+            0.00022950582206249237,
+            7.748496136628091e-05,
+            0.006974067073315382,
+            0.00010899498738581315,
+            0.00022127012198325247,
+            0.00018290661682840437
+        ],
+        "align_select": "select Cartoon.Production_code, Cartoon.Channel",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the production code and channel of the newest cartoon?",
+        "gold_select": "select Cartoon.Production_code, Cartoon.Channel",
+        "select_candidates": [
+            "select Cartoon.Production_code, Cartoon.Channel",
+            "select Cartoon.Production_code.c5, Cartoon.Channel",
+            "select Cartoon.Production_code.c6, Cartoon.Production_code",
+            "select Cartoon.Production_code, Cartoon.Channel"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Cartoon",
+        "table_candidates": [
+            "Cartoon"
+        ],
+        "align_scores": [
+            0.9152958989143372,
+            6.702292739646509e-05,
+            0.0003369680780451745,
+            9.005785977933556e-05,
+            0.0001930816943058744,
+            8.662668551551178e-05,
+            0.9152958989143372,
+            6.702292739646509e-05
+        ],
+        "align_select": "select Cartoon.Production_code, Cartoon.Channel",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the produdction code and channel of the last cartoon?",
+        "gold_select": "select Cartoon.Production_code, Cartoon.Channel",
+        "select_candidates": [
+            "select Cartoon.Production_code, Cartoon.Channel",
+            "select max(Cartoon.Production_code), max(Cartoon.Channel)",
+            "select Cartoon.Production_code.c6, Cartoon.Production_code",
+            "select t 2.c5, Cartoon.Channel"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Cartoon",
+        "table_candidates": [
+            "Cartoon"
+        ],
+        "align_scores": [
+            0.9951962828636169,
+            6.811325147282332e-05,
+            0.00036833464400842786,
+            8.156777039403096e-05,
+            0.00019345097825862467,
+            5.428652366390452e-05,
+            0.0003614649176597595,
+            8.445818821201101e-05
+        ],
+        "align_select": "select Cartoon.Production_code, Cartoon.Channel",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the money rank of the poker player who has won the most?",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.Poker_Player_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player",
+        "table_candidates": [
+            "poker_player",
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.8680272698402405,
+            0.9908762574195862,
+            0.00022198393708094954,
+            0.00028176800697110593,
+            0.0002449767489451915,
+            0.0003186988178640604,
+            0.00026182286092080176,
+            0.0003693395701702684
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money rank of the player who made the most.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.Poker_Player_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player",
+        "table_candidates": [
+            "poker_player",
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.957248866558075,
+            0.9952051639556885,
+            0.0001356035063508898,
+            0.00016316337860189378,
+            0.00013729858619626611,
+            0.00016831538232509047,
+            0.00011910237662959844,
+            0.00012422229337971658
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money rank of the player that has made the most.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.Poker_Player_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player",
+        "table_candidates": [
+            "poker_player",
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.7478494644165039,
+            0.9919414520263672,
+            0.0001428757095709443,
+            0.00017125756130553782,
+            0.00013958096678834409,
+            0.0001810624380595982,
+            0.00012260429502930492,
+            0.0001277037663385272
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the birthday of the poker player who has made the least?",
+        "gold_select": "select people.Birth_Date",
+        "select_candidates": [
+            "select people.Birth_Date",
+            "select people.Birth_Date, poker_player.Final_Table_Made",
+            "select people.Birth_Date, people.Height",
+            "select people.Birth_Date, people.Name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.9862318634986877,
+            0.00012838971451856196,
+            0.0006700496305711567,
+            6.928185757715255e-05,
+            0.00019821898604277521,
+            6.489436782430857e-05,
+            0.0005009991582483053,
+            8.33486337796785e-05
+        ],
+        "align_select": "select people.Birth_Date",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the birth date of the poker player that made the smallest amount?",
+        "gold_select": "select people.Birth_Date",
+        "select_candidates": [
+            "select people.Birth_Date",
+            "select people.Birth_Date, people.Height",
+            "select people.Birth_Date, people.Name",
+            "select people.Birth_Date, poker_player.Money_Rank"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.9921183586120605,
+            7.067107071634382e-05,
+            0.00014716391160618514,
+            6.338550156215206e-05,
+            0.0004692944639828056,
+            6.304273847490549e-05,
+            0.00041349520324729383,
+            5.4605519835604355e-05
+        ],
+        "align_select": "select people.Birth_Date",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "return the birthday of the poker player who made the least amount.",
+        "gold_select": "select people.Birth_Date",
+        "select_candidates": [
+            "select people.Birth_Date",
+            "select people.People_ID, people.Birth_Date",
+            "select people.Birth_Date, people.Name",
+            "select people.Birth_Date, people.Height"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.9907647371292114,
+            7.295931573025882e-05,
+            0.00033815184724517167,
+            6.33431991445832e-05,
+            0.0004097605706192553,
+            6.0980873968219385e-05,
+            0.00015313805488403887,
+            5.808285277453251e-05
+        ],
+        "align_select": "select people.Birth_Date",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the birthday of the poker player who made the least.",
+        "gold_select": "select people.Birth_Date",
+        "select_candidates": [
+            "select people.Birth_Date",
+            "select people.Birth_Date, poker_player.Final_Table_Made",
+            "select people.Birth_Date, people.Height",
+            "select people.Birth_Date, people.Name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people"
+        ],
+        "align_scores": [
+            0.9930353760719299,
+            7.87080789450556e-05,
+            0.0005063142161816359,
+            5.5810898629715666e-05,
+            0.0001452730648452416,
+            5.748646435677074e-05,
+            0.00034574628807604313,
+            6.176146416692063e-05
+        ],
+        "align_select": "select people.Birth_Date",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money rank of the poker player is tallest.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.Poker_Player_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people",
+            "people poker_player people"
+        ],
+        "align_scores": [
+            0.36088407039642334,
+            5.546919419430196e-05,
+            0.00012527502258308232,
+            6.184550147736445e-05,
+            0.00011274930147919804,
+            6.0931000916752964e-05,
+            0.0001493027084507048,
+            5.6084860261762515e-05
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money rank of the poker player the tallest.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.Poker_Player_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people",
+            "people poker_player people"
+        ],
+        "align_scores": [
+            0.9567391872406006,
+            5.929952021688223e-05,
+            0.0001110242519644089,
+            6.300721724983305e-05,
+            0.00010251175990561023,
+            6.098192170611583e-05,
+            0.0001384114584652707,
+            5.578355194302276e-05
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money rank of the poker player that is tallest.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made",
+            "select poker_player.Money_Rank, people.Height"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people",
+            "people poker_player people"
+        ],
+        "align_scores": [
+            0.3415548503398895,
+            5.513589348993264e-05,
+            0.00011787018593167886,
+            5.592640445684083e-05,
+            0.00013270364433992654,
+            5.489058457897045e-05,
+            0.0005035279900766909,
+            5.4622294555883855e-05
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money rank of the poker player who is tallest.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Final_Table_Made",
+            "select poker_player.Money_Rank, people.Height"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people",
+            "people poker_player people"
+        ],
+        "align_scores": [
+            0.46789515018463135,
+            5.7800720242084935e-05,
+            0.000136654925881885,
+            5.7310706324642524e-05,
+            0.0001637644018046558,
+            5.629550287267193e-05,
+            0.000593312201090157,
+            5.699339817510918e-05
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the money ranking of the poker player who is tallest.",
+        "gold_select": "select poker_player.Money_Rank",
+        "select_candidates": [
+            "select poker_player.Money_Rank",
+            "select poker_player.People_ID, poker_player.Money_Rank",
+            "select poker_player.Money_Rank, people.Height",
+            "select poker_player.People_ID, poker_player.Final_Table_Made"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "poker_player people",
+        "table_candidates": [
+            "poker_player people",
+            "people poker_player people"
+        ],
+        "align_scores": [
+            0.0789119154214859,
+            5.890870306757279e-05,
+            0.00014325426309369504,
+            5.896377842873335e-05,
+            0.0005402800743468106,
+            5.7697357988217846e-05,
+            0.00015865315799601376,
+            5.920820694882423e-05
+        ],
+        "align_select": "select poker_player.Money_Rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Give the name of the Asian countries which live shortest?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Continent",
+            "select country.Name, country.Population",
+            "select country.Name, country.Region"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9921733140945435,
+            0.0002491783525329083,
+            0.00026031670859083533,
+            0.0001055528991855681,
+            0.0003519227320794016,
+            8.427428110735491e-05,
+            0.0002220195165136829,
+            9.719332592794672e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name, population and expected life span of biggest Asian country?",
+        "gold_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "select_candidates": [
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.IndepYear, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Code, country.Population, country.LifeExpectancy"
+        ],
+        "select_labels": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9925462603569031,
+            0.9933007955551147,
+            0.9925462603569031,
+            0.9933007955551147,
+            0.00027745580882765353,
+            0.0011356339091435075,
+            0.00028359441785141826,
+            0.0009746166178956628
+        ],
+        "align_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Find the name, population and lifespan expectancy of the largest Asian country?",
+        "gold_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "select_candidates": [
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Code, country.Population, country.LifeExpectancy",
+            "select country.Name, country.IndepYear, country.Population, country.LifeExpectancy"
+        ],
+        "select_labels": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9833261370658875,
+            0.9827331304550171,
+            0.9833261370658875,
+            0.9827331304550171,
+            0.0003131014236714691,
+            0.0011120950803160667,
+            0.00033547900966368616,
+            0.0010797827271744609
+        ],
+        "align_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "Find the name, population and expected life span of the biggest Asian countries.",
+        "gold_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "select_candidates": [
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Code, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Population, country.LifeExpectancy, country.LifeExpectancy"
+        ],
+        "select_labels": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9877771735191345,
+            0.9914041757583618,
+            0.9877771735191345,
+            0.9914041757583618,
+            0.00028983046649955213,
+            0.0011161180445924401,
+            0.0004646198940463364,
+            0.0006055805715732276
+        ],
+        "align_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What are the name, population, and life expectancy of the largest Asian country?",
+        "gold_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "select_candidates": [
+            "select country.Name, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Code, country.Population, country.LifeExpectancy",
+            "select country.Name, country.IndepYear, country.Population, country.LifeExpectancy",
+            "select country.Name, country.Population, country.LifeExpectancy"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9827702045440674,
+            0.0001417625171598047,
+            0.00042891150224022567,
+            8.283044007839635e-05,
+            0.0004600791144184768,
+            8.67386843310669e-05,
+            0.9827702045440674,
+            0.0001417625171598047
+        ],
+        "align_select": "select country.Name, country.Population, country.LifeExpectancy",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the name, independence year, and surface area of the small country in which there is least people?",
+        "gold_select": "select country.Name, country.SurfaceArea, country.IndepYear",
+        "select_candidates": [
+            "select country.Name, country.IndepYear, country.SurfaceArea",
+            "select country.Name, country.IndepYear., country.SurfaceArea",
+            "select country.Name, country.IndepYear, country.SurfaceArea",
+            "select country.Name, country.IndepYear\", country.SurfaceArea"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9659641981124878,
+            9.863801824394614e-05,
+            0.03604155406355858,
+            0.00012491205416154116,
+            0.9659641981124878,
+            9.863801824394614e-05,
+            0.011615517549216747,
+            7.968061254359782e-05
+        ],
+        "align_select": "select country.Name, country.IndepYear, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the population, name and leader of the largest country?",
+        "gold_select": "select country.Name, country.Population, country.HeadOfState",
+        "select_candidates": [
+            "select country.Population, country.Name, country.HeadOfState",
+            "select country.Code, country.Name, country.HeadOfState",
+            "select country.Name, country.Population, country.HeadOfState",
+            "select country.Population), country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9930862188339233,
+            7.29842358850874e-05,
+            0.0004568072617985308,
+            9.784510621102527e-05,
+            0.9939145445823669,
+            7.624767749803141e-05,
+            0.0023647737689316273,
+            7.080518116708845e-05
+        ],
+        "align_select": "select country.Population, country.Name, country.HeadOfState",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the population, name and leadership of the biggest country?",
+        "gold_select": "select country.Name, country.Population, country.HeadOfState",
+        "select_candidates": [
+            "select country.Population, country.Name, country.HeadOfState",
+            "select country.Code, country.Name, country.HeadOfState",
+            "select country.Name, country.Population, country.HeadOfState",
+            "select country.Population), country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9940915703773499,
+            7.910333079053089e-05,
+            0.0005248879897408187,
+            0.0001055633692885749,
+            0.9945945143699646,
+            8.260634785983711e-05,
+            0.003514437936246395,
+            7.532179733971134e-05
+        ],
+        "align_select": "select country.Population, country.Name, country.HeadOfState",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Give the name, population, and leader of the largest country.",
+        "gold_select": "select country.Name, country.Population, country.HeadOfState",
+        "select_candidates": [
+            "select country.Name, country.Population, country.HeadOfState",
+            "select country.Name, country.Population, country.HeadOfState",
+            "select country.Name, country.Code6, country.HeadOfState",
+            "select country.Name, country.Population), country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9944158792495728,
+            6.886012124596164e-05,
+            0.9944158792495728,
+            6.886012124596164e-05,
+            0.0004203635617159307,
+            8.283596980618313e-05,
+            0.0011119922855868936,
+            6.253211904549971e-05
+        ],
+        "align_select": "select country.Name, country.Population, country.HeadOfState",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Give the country's name, population, and political figurehead for the largest country.",
+        "gold_select": "select country.Name, country.Population, country.HeadOfState",
+        "select_candidates": [
+            "select country.Name, country.Population, country.HeadOfState",
+            "select country.Name, country.Population), country.HeadOfState",
+            "select country.Name, country.Population, country.HeadOfState",
+            "select country.Name, country.Population, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            1.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9925810098648071,
+            6.800771370762959e-05,
+            0.0016310627106577158,
+            6.320478132693097e-05,
+            0.9925810098648071,
+            6.800771370762959e-05,
+            0.9925810098648071,
+            6.800771370762959e-05
+        ],
+        "align_select": "select country.Name, country.Population, country.HeadOfState",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and areas of 5 largest countries?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.Region, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Region"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9951114058494568,
+            7.088691927492619e-05,
+            0.4227200448513031,
+            6.93012261763215e-05,
+            0.0002700073819141835,
+            8.027258445508778e-05,
+            0.00016034020518418401,
+            6.0881862737005576e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and areas of top 5 largest countries?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.Region, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Region"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9949369430541992,
+            7.035530870780349e-05,
+            0.9797740578651428,
+            7.074874883983284e-05,
+            0.00022018252639099956,
+            7.570633169962093e-05,
+            0.00015991725376807153,
+            6.159571785246953e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List the name of the conductor who has had the longest career.",
+        "gold_select": "select conductor.Name",
+        "select_candidates": [
+            "select conductor.Name",
+            "select conductor.Name, conductor.Age",
+            "select conductor.Name, conductor.Nationality",
+            "select conductor.Name, conductor.Year_of_Work"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "conductor",
+        "table_candidates": [
+            "conductor"
+        ],
+        "align_scores": [
+            0.9855051636695862,
+            6.141565245343372e-05,
+            0.0005122650181874633,
+            5.79937404836528e-05,
+            0.000341683451551944,
+            5.822460298077203e-05,
+            0.000753283966332674,
+            5.7226818171329796e-05
+        ],
+        "align_select": "select conductor.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List the name of the conductor with the longest career.",
+        "gold_select": "select conductor.Name",
+        "select_candidates": [
+            "select conductor.Name",
+            "select conductor.Name, conductor.Age",
+            "select conductor.Name, conductor.Nationality",
+            "select conductor.Name, conductor.Nationality, conductor.Year_of_Work"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "conductor",
+        "table_candidates": [
+            "conductor"
+        ],
+        "align_scores": [
+            0.9934064149856567,
+            6.053208198864013e-05,
+            0.00039396373904310167,
+            5.750664422521368e-05,
+            0.0002730695123318583,
+            5.669417078024708e-05,
+            0.0002211018290836364,
+            5.582378071267158e-05
+        ],
+        "align_select": "select conductor.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List the name of the conductor with the most experience.",
+        "gold_select": "select conductor.Name",
+        "select_candidates": [
+            "select conductor.Name",
+            "select conductor.Name, conductor.Age",
+            "select conductor.Name, conductor.Nationality",
+            "select conductor.Name, conductor.Year_of_Work"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "conductor",
+        "table_candidates": [
+            "conductor"
+        ],
+        "align_scores": [
+            0.9894970655441284,
+            0.9953086972236633,
+            0.0007050581043586135,
+            0.0010162261314690113,
+            0.0003753835044335574,
+            0.0004942914820276201,
+            0.0005905916332267225,
+            0.0006670833099633455
+        ],
+        "align_select": "select conductor.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List the name of conductor who has worked the longest.",
+        "gold_select": "select conductor.Name",
+        "select_candidates": [
+            "select conductor.Name",
+            "select conductor.Name, conductor.Nationality",
+            "select conductor.Name, conductor.Nationality, conductor.Year_of_Work",
+            "select conductor.Name, conductor.Age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "conductor",
+        "table_candidates": [
+            "conductor"
+        ],
+        "align_scores": [
+            0.9904224872589111,
+            5.8488265494816005e-05,
+            0.00027930489159189165,
+            6.051973105059005e-05,
+            0.00018571030523162335,
+            5.474635327118449e-05,
+            0.0006159328040666878,
+            5.618989598588087e-05
+        ],
+        "align_select": "select conductor.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Who is the conductor who has worked longest?",
+        "gold_select": "select conductor.Name",
+        "select_candidates": [
+            "select conductor.Name",
+            "select conductor.Name, conductor.Nationality",
+            "select conductor.Name, conductor.Age",
+            "select conductor.Conductor_ID, conductor.Name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "conductor",
+        "table_candidates": [
+            "conductor"
+        ],
+        "align_scores": [
+            0.9931524991989136,
+            5.9119684010511264e-05,
+            0.0003520311147440225,
+            5.5422719015041366e-05,
+            0.0004199128015898168,
+            5.7046028814511374e-05,
+            0.000305098103126511,
+            5.808540299767628e-05
+        ],
+        "align_select": "select conductor.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the conductor\u2019s name who has had the longest career?",
+        "gold_select": "select conductor.Name",
+        "select_candidates": [
+            "select conductor.Name",
+            "select conductor.Name, conductor.Age",
+            "select conductor.Name, conductor.Nationality",
+            "select conductor.Name, conductor.Year_of_Work"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "conductor",
+        "table_candidates": [
+            "conductor"
+        ],
+        "align_scores": [
+            0.9907721281051636,
+            7.109055877663195e-05,
+            0.0007088390411809087,
+            5.9416008298285306e-05,
+            0.0006117504090070724,
+            7.0420210249722e-05,
+            0.0007579864468425512,
+            5.8249370340490714e-05
+        ],
+        "align_select": "select conductor.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the description of the treatment type that is cheapest overall?",
+        "gold_select": "select Treatment_Types.treatment_type_description",
+        "select_candidates": [
+            "select Treatment_Types.treatment_type_description",
+            "select Treatment_Types.treatment_type_description, Treatments.treatment_type_code",
+            "select Treatment_Types.treatment_type_description, t7",
+            "select Treatment_Types.treatment_type_description, Treatments.professional_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Treatment_Types Treatments",
+        "table_candidates": [
+            "Treatment_Types Treatments",
+            "Sizes Treatment_Types Treatments",
+            "Breeds Treatment_Types Treatments",
+            "Charges Treatments"
+        ],
+        "align_scores": [
+            0.9951707720756531,
+            8.351228461833671e-05,
+            0.0006352611817419529,
+            6.56923366477713e-05,
+            0.0006597859901376069,
+            7.048047700664029e-05,
+            0.00012942198372911662,
+            5.965167656540871e-05
+        ],
+        "align_select": "select Treatment_Types.treatment_type_description",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the description of the treatment type that is the cheapest in total?",
+        "gold_select": "select Treatment_Types.treatment_type_description",
+        "select_candidates": [
+            "select Treatment_Types.treatment_type_description",
+            "select Treatment_Types.treatment_type_description, Treatments.treatment_type_code",
+            "select Treatment_Types.treatment_type_description, t7",
+            "select Treatment_Types.treatment_type_description, Treatments.professional_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Treatment_Types Treatments",
+        "table_candidates": [
+            "Treatment_Types Treatments",
+            "Sizes Treatment_Types Treatments",
+            "Breeds Treatment_Types Treatments",
+            "Charges Treatments"
+        ],
+        "align_scores": [
+            0.994529664516449,
+            6.22577135800384e-05,
+            0.000661487050820142,
+            6.129594112280756e-05,
+            0.0006064316257834435,
+            7.295652903849259e-05,
+            0.00012345905997790396,
+            5.6586144637549296e-05
+        ],
+        "align_select": "select Treatment_Types.treatment_type_description",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Describe the overall cheapest treatment type?",
+        "gold_select": "select Treatment_Types.treatment_type_description",
+        "select_candidates": [
+            "select Treatment_Types.treatment_type_description",
+            "select Treatment_Types.treatment_type_description, Treatments.treatment_type_code",
+            "select Treatment_Types.treatment_type_description, t7",
+            "select Treatment_Types.treatment_type_description, Treatments.professional_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Treatment_Types Treatments",
+        "table_candidates": [
+            "Treatment_Types Treatments",
+            "Sizes Treatment_Types Treatments",
+            "Breeds Treatment_Types Treatments",
+            "Charges Treatments"
+        ],
+        "align_scores": [
+            0.9962809681892395,
+            7.851826376281679e-05,
+            0.00034509587567299604,
+            6.28686320851557e-05,
+            0.0004866709350608289,
+            6.0582675359910354e-05,
+            0.00010920222121058032,
+            5.4844116675667465e-05
+        ],
+        "align_select": "select Treatment_Types.treatment_type_description",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Describe the least expensive treatment type?",
+        "gold_select": "select Treatment_Types.treatment_type_description",
+        "select_candidates": [
+            "select Treatment_Types.treatment_type_description",
+            "select Treatment_Types.treatment_type_description, Treatments.treatment_type_code",
+            "select Treatment_Types.treatment_type_description, t7",
+            "select Treatment_Types.treatment_type_description, Treatments.professional_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "Treatment_Types Treatments",
+        "table_candidates": [
+            "Treatment_Types Treatments",
+            "Sizes Treatment_Types Treatments",
+            "Breeds Treatment_Types Treatments",
+            "Charges Treatments"
+        ],
+        "align_scores": [
+            0.9948340654373169,
+            0.9953576922416687,
+            0.0004484947130549699,
+            0.0003647425037343055,
+            0.0006174230366013944,
+            0.0004258555418346077,
+            0.0001386288640787825,
+            0.00010994847252732143
+        ],
+        "align_select": "select Treatment_Types.treatment_type_description",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Who paid the most in total for their dogs? Show the owner id and zip code.",
+        "gold_select": "select Owners.owner_id, Owners.zip_code",
+        "select_candidates": [
+            "select Owners.owner_id, Owners.zip_code",
+            "select Dogs.owner_id, Owners.zip_code",
+            "select Owners.owner_id-, Owners.zip_code",
+            "select Owners.owner_id, t4c6"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Owners Dogs Treatments",
+        "table_candidates": [
+            "Owners Dogs",
+            "Charges Owners Dogs",
+            "Sizes Owners Dogs",
+            "Breeds Charges Owners Dogs",
+            "Treatment_Types Owners Dogs",
+            "Breeds Owners Dogs",
+            "Charges Sizes Owners Dogs",
+            "Charges Sizes Dogs"
+        ],
+        "align_scores": [
+            0.99241042137146,
+            7.402179471682757e-05,
+            0.9428353905677795,
+            8.153004455380142e-05,
+            0.0027416276279836893,
+            7.191559416241944e-05,
+            0.001509115332737565,
+            7.971510785864666e-05
+        ],
+        "align_select": "select Owners.owner_id, Owners.zip_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which owner paid the most in total for their dogs? Show the owner id and zip code.",
+        "gold_select": "select Owners.owner_id, Owners.zip_code",
+        "select_candidates": [
+            "select Owners.owner_id, Owners.zip_code",
+            "select Sizes.size_code, Owners.zip_code",
+            "select Dogs.owner_id, Owners.zip_code",
+            "select Owners.owner_id, t4c6"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Owners Dogs Treatments",
+        "table_candidates": [
+            "Charges Owners Dogs",
+            "Owners Dogs",
+            "Breeds Charges Owners Dogs",
+            "Charges Sizes Owners Dogs",
+            "Sizes Owners Dogs",
+            "Treatment_Types Owners Dogs",
+            "Charges Sizes Dogs"
+        ],
+        "align_scores": [
+            0.9912978410720825,
+            7.806158828316256e-05,
+            0.0004945897380821407,
+            8.085476292762905e-05,
+            0.8947071433067322,
+            8.659332524985075e-05,
+            0.001261879806406796,
+            8.227224316215143e-05
+        ],
+        "align_select": "select Owners.owner_id, Owners.zip_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Who paid the most in total? Show the owner id and zip code.",
+        "gold_select": "select Owners.owner_id, Owners.zip_code",
+        "select_candidates": [
+            "select Owners.owner_id, Owners.zip_code",
+            "select Owners.first_name, Owners.last_name, Owners.zip_code",
+            "select Owners.owner_id, Owners.zip_code, Owners.email_address",
+            "select Owners.owner_id-, Owners.zip_code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Owners Dogs Treatments",
+        "table_candidates": [
+            "Charges Owners",
+            "Charges Sizes Owners",
+            "Owners Dogs",
+            "Charges Sizes",
+            "Charges Owners Dogs",
+            "Owners Treatments"
+        ],
+        "align_scores": [
+            0.9945751428604126,
+            6.757297524018213e-05,
+            0.0003866366751026362,
+            7.009206456132233e-05,
+            0.00023335758305620402,
+            6.699519144603983e-05,
+            0.002427654108032584,
+            6.756517541361973e-05
+        ],
+        "align_select": "select Owners.owner_id, Owners.zip_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the owner ID and zip code of the owner who spent the most on their dogs.",
+        "gold_select": "select Owners.owner_id, Owners.zip_code",
+        "select_candidates": [
+            "select Owners.owner_id, Owners.zip_code",
+            "select Sizes.size_code, Owners.zip_code",
+            "select Treatments.dog_id, Owners.zip_code",
+            "select Dogs.owner_id, Owners.zip_code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Owners Dogs Treatments",
+        "table_candidates": [
+            "Owners Dogs Treatments",
+            "Sizes Owners Dogs Treatments",
+            "Treatment_Types Owners Dogs Treatments",
+            "Charges Owners Dogs Treatments",
+            "Breeds Owners Dogs Treatments"
+        ],
+        "align_scores": [
+            0.9922987818717957,
+            8.011917088879272e-05,
+            0.0005447342991828918,
+            8.134344534482807e-05,
+            0.0005408195429481566,
+            7.194206409621984e-05,
+            0.9134495258331299,
+            8.358072227565572e-05
+        ],
+        "align_select": "select Owners.owner_id, Owners.zip_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the owner id and zip code of the owner who spent the most on their dog in total.",
+        "gold_select": "select Owners.owner_id, Owners.zip_code",
+        "select_candidates": [
+            "select Owners.owner_id, Owners.zip_code",
+            "select Sizes.size_code, Owners.zip_code",
+            "select Owners.owner_id-, Owners.zip_code",
+            "select Dogs.owner_id, Owners.zip_code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Owners Dogs Treatments",
+        "table_candidates": [
+            "Owners Dogs Treatments",
+            "Sizes Owners Dogs Treatments",
+            "Charges Owners Dogs Treatments",
+            "Treatment_Types Owners Dogs Treatments",
+            "Breeds Dogs Treatments"
+        ],
+        "align_scores": [
+            0.9896944761276245,
+            0.00011027943401131779,
+            0.0006619500345550478,
+            8.08304685051553e-05,
+            0.005184808745980263,
+            7.855406875023618e-05,
+            0.904641330242157,
+            0.00011381069634808227
+        ],
+        "align_select": "select Owners.owner_id, Owners.zip_code",
+        "align_structure": "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+    },
+    {
+        "question": "How much does the last treatment?",
+        "gold_select": "select Treatments.cost_of_treatment",
+        "select_candidates": [
+            "select Treatments.cost_of_treatment",
+            "select Treatments.cost_of_treatment, Treatments.treatment_type_code",
+            "select Treatments.cost_of_treatment, Treatments.date_of_treatment",
+            "select Treatments.cost_of_treatment, Treatments.dog_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Treatments",
+        "table_candidates": [
+            "Treatments",
+            "Dogs Treatments",
+            "Charges Treatments",
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Breeds Treatments",
+            "Breeds Charges Treatments"
+        ],
+        "align_scores": [
+            0.9876614809036255,
+            5.762978253187612e-05,
+            0.00022332349908538163,
+            5.13034756295383e-05,
+            0.00013070160639472306,
+            5.219773811404593e-05,
+            0.00033237889874726534,
+            5.015218994230963e-05
+        ],
+        "align_select": "select Treatments.cost_of_treatment",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "How much does the latest treatment?",
+        "gold_select": "select Treatments.cost_of_treatment",
+        "select_candidates": [
+            "select Treatments.cost_of_treatment",
+            "select Treatments.cost_of_treatment, Treatments.treatment_type_code",
+            "select Treatments.cost_of_treatment, Treatments.dog_id",
+            "select Treatments.cost_of_treatment, Treatments.date_of_treatment"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Treatments",
+        "table_candidates": [
+            "Treatments",
+            "Dogs Treatments"
+        ],
+        "align_scores": [
+            0.006751234643161297,
+            5.81681051698979e-05,
+            0.00013265330926515162,
+            5.2751533075934276e-05,
+            9.744796989252791e-05,
+            5.073767533758655e-05,
+            0.00022609112784266472,
+            5.2916289860149845e-05
+        ],
+        "align_select": "select Treatments.cost_of_treatment",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "How much does the newest treatment?",
+        "gold_select": "select Treatments.cost_of_treatment",
+        "select_candidates": [
+            "select Treatments.cost_of_treatment",
+            "select Treatments.cost_of_treatment, Treatments.treatment_type_code",
+            "select Treatments.cost_of_treatment, Treatments.dog_id",
+            "select Treatments.cost_of_treatment, Treatments.professional_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Treatments",
+        "table_candidates": [
+            "Treatments",
+            "Dogs Treatments",
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Charges Treatments",
+            "Breeds Treatments",
+            "Treatment_Types Treatments"
+        ],
+        "align_scores": [
+            0.04262974113225937,
+            5.788290945929475e-05,
+            0.00018942587485071272,
+            5.1742234063567594e-05,
+            0.00010643282439559698,
+            5.0536262278910726e-05,
+            9.92448694887571e-05,
+            4.90322636323981e-05
+        ],
+        "align_select": "select Treatments.cost_of_treatment",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the name of the singer who is richest?",
+        "gold_select": "select singer.Name",
+        "select_candidates": [
+            "select singer.Name",
+            "select singer.Name, singer.Net_Worth_Millions",
+            "select singer.Name, singer.Birth_Year",
+            "select singer.Singer_ID, singer.Name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.9879764914512634,
+            6.57087512081489e-05,
+            0.0004957456840202212,
+            6.114368443377316e-05,
+            0.0008488909224979579,
+            5.9316313127055764e-05,
+            0.0003534525749273598,
+            6.296834908425808e-05
+        ],
+        "align_select": "select singer.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Which is the richest of all singers?",
+        "gold_select": "select singer.Name",
+        "select_candidates": [
+            "select singer.Name",
+            "select singer.Singer_ID, singer.Name",
+            "select singer.Name, singer.Net_Worth_Millions",
+            "select singer.Singer_ID, singer.Name, singer.Net_Worth_Millions"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.6878437995910645,
+            6.392350042006001e-05,
+            0.00045294908341020346,
+            5.706746378564276e-05,
+            0.0004437168827280402,
+            5.91256030020304e-05,
+            0.00029996587545610964,
+            5.8632569562178105e-05
+        ],
+        "align_select": "select singer.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What is the name of the singer is most wealthy.",
+        "gold_select": "select singer.Name",
+        "select_candidates": [
+            "select singer.Name",
+            "select singer.Name, singer.Net_Worth_Millions",
+            "select singer.Name, singer.Birth_Year",
+            "select singer.Singer_ID, singer.Name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.9850618243217468,
+            6.392624345608056e-05,
+            0.0004024969239253551,
+            6.036307604517788e-05,
+            0.00032977270893752575,
+            5.9889585827477276e-05,
+            0.0002623788604978472,
+            6.218264752533287e-05
+        ],
+        "align_select": "select singer.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Name the singer, who is richest.",
+        "gold_select": "select singer.Name",
+        "select_candidates": [
+            "select singer.Name",
+            "select singer.Name, singer.Net_Worth_Millions",
+            "select singer.Singer_ID, singer.Name",
+            "select singer.Name, singer.Net_Worth_Millions"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "singer",
+        "table_candidates": [
+            "singer"
+        ],
+        "align_scores": [
+            0.9784078001976013,
+            6.016962288413197e-05,
+            0.20648610591888428,
+            6.918475264683366e-05,
+            0.00048085793969221413,
+            6.125772051746026e-05,
+            0.20648610591888428,
+            6.918475264683366e-05
+        ],
+        "align_select": "select singer.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    }
+]

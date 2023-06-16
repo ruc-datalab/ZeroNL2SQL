@@ -1,0 +1,5545 @@
+[
+    {
+        "question": "Which countries in europe have at least 2 car manufacturers?",
+        "gold_select": "select countries.CountryName",
+        "select_candidates": [
+            "select countries.CountryName",
+            "select countries.CountryName, continents.Continent",
+            "select countries.CountryName, car_makers.Country",
+            "select countries.CountryName, continents.ContId"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "continents countries car_makers",
+        "table_candidates": [
+            "continents countries car_makers",
+            "countries car_makers"
+        ],
+        "align_scores": [
+            0.9633418321609497,
+            0.00016881880583241582,
+            0.00039986189221963286,
+            8.628841169411317e-05,
+            0.002189160790294409,
+            8.988147601485252e-05,
+            0.0022855200804769993,
+            0.00010445091174915433
+        ],
+        "align_select": "select countries.CountryName",
+        "align_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which countries in europe have at least 4 car manufacturers?",
+        "gold_select": "select countries.CountryName",
+        "select_candidates": [
+            "select countries.CountryName",
+            "select countries.CountryName, continents.Continent",
+            "select countries.CountryName, continents.ContId",
+            "select countries.CountryName, t0.c2"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "continents countries car_makers",
+        "table_candidates": [
+            "continents countries car_makers",
+            "countries car_makers"
+        ],
+        "align_scores": [
+            0.9656227231025696,
+            0.0001361343020107597,
+            0.00042058664257638156,
+            6.896263221278787e-05,
+            0.0024254850577563047,
+            7.671349885640666e-05,
+            0.00021751393796876073,
+            6.170341657707468e-05
+        ],
+        "align_select": "select countries.CountryName",
+        "align_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of all European countries with at least 2 manufacturers?",
+        "gold_select": "select countries.CountryName",
+        "select_candidates": [
+            "select countries.CountryName",
+            "select countries.CountryName, continents.Continent",
+            "select countries.CountryName, continents.ContId",
+            "select countries.CountryName, t0.c2"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "continents countries car_makers",
+        "table_candidates": [
+            "continents countries car_makers",
+            "continents car_makers",
+            "continents countries",
+            "countries car_makers"
+        ],
+        "align_scores": [
+            0.9638591408729553,
+            0.00018844997975975275,
+            0.00047490245196968317,
+            0.00011212573008378968,
+            0.0014682092005386949,
+            0.00015310899470932782,
+            0.00035768430097959936,
+            0.00010045081580756232
+        ],
+        "align_select": "select countries.CountryName",
+        "align_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of all European countries with at least 4 manufacturers?",
+        "gold_select": "select countries.CountryName",
+        "select_candidates": [
+            "select countries.CountryName",
+            "select countries.CountryName, continents.Continent",
+            "select countries.CountryName, t0.c2",
+            "select countries.CountryName, continents.ContId"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "continents countries car_makers",
+        "table_candidates": [
+            "continents countries car_makers",
+            "continents car_makers",
+            "continents countries",
+            "countries car_makers"
+        ],
+        "align_scores": [
+            0.9659674167633057,
+            0.00018162837659474462,
+            0.0004833855200558901,
+            0.00011496308434288949,
+            0.0002510187332518399,
+            0.00010410179675091058,
+            0.001434854930266738,
+            0.00015395766240544617
+        ],
+        "align_select": "select countries.CountryName",
+        "align_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which makers designed more than 2 car models? List full name and the id.",
+        "gold_select": "select car_makers.FullName, car_makers.Id",
+        "select_candidates": [
+            "select car_makers.FullName, car_makers.Id",
+            "select car_makers.Maker, car_makers.FullName, car_makers.Id",
+            "select car_makers.FullName, model_list.Maker, model_list.ModelId",
+            "select car_makers.FullName, car_names.Model, car_makers.Id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_makers model_list",
+        "table_candidates": [
+            "car_makers model_list car_names",
+            "countries car_makers model_list car_names",
+            "car_makers model_list",
+            "countries model_list car_names"
+        ],
+        "align_scores": [
+            0.9732889533042908,
+            0.00013329539797268808,
+            0.0005013176705688238,
+            8.44221212901175e-05,
+            0.00021883216686546803,
+            6.896217382745817e-05,
+            0.00030403764685615897,
+            7.393940177280456e-05
+        ],
+        "align_select": "select car_makers.FullName, car_makers.Id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which makers designed more than 4 car models? List full name and the id.",
+        "gold_select": "select car_makers.FullName, car_makers.Id",
+        "select_candidates": [
+            "select car_makers.FullName, car_makers.Id",
+            "select car_makers.Maker, car_makers.FullName, car_makers.Id",
+            "select car_makers.FullName, model_list.Maker, model_list.ModelId",
+            "select car_makers.FullName, car_names.Model, car_makers.Id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_makers model_list",
+        "table_candidates": [
+            "car_makers model_list car_names",
+            "countries car_makers model_list car_names",
+            "car_makers model_list",
+            "car_makers car_names"
+        ],
+        "align_scores": [
+            0.9689148664474487,
+            0.00012285004777368158,
+            0.00048514516674913466,
+            8.271622937172651e-05,
+            0.000190529361134395,
+            6.488025974249467e-05,
+            0.00022956360771786422,
+            6.971522816456854e-05
+        ],
+        "align_select": "select car_makers.FullName, car_makers.Id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names and ids of all makers with more than 2 models?",
+        "gold_select": "select car_makers.FullName, car_makers.Id",
+        "select_candidates": [
+            "select car_makers.FullName, model_list.Maker",
+            "select car_makers.FullName, car_makers.Id",
+            "select car_makers.Maker, model_list.Maker",
+            "select car_makers.FullName, model_list.ModelId"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_makers model_list",
+        "table_candidates": [
+            "car_makers model_list",
+            "car_makers model_list car_names",
+            "model_list car_names",
+            "continents car_makers model_list"
+        ],
+        "align_scores": [
+            0.39059314131736755,
+            0.00012664124369621277,
+            0.9593359231948853,
+            0.000135983937070705,
+            0.0010738881537690759,
+            6.939062586752698e-05,
+            0.0006275394116528332,
+            9.542264160700142e-05
+        ],
+        "align_select": "select car_makers.FullName, car_makers.Id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names and ids of all makers with more than 4 models?",
+        "gold_select": "select car_makers.FullName, car_makers.Id",
+        "select_candidates": [
+            "select car_makers.FullName, car_makers.Id",
+            "select car_makers.FullName, model_list.Maker",
+            "select car_makers.Maker, car_makers.Id",
+            "select car_makers.FullName, model_list.ModelId"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "car_makers model_list",
+        "table_candidates": [
+            "car_makers model_list",
+            "car_makers model_list car_names",
+            "continents car_makers model_list car_names"
+        ],
+        "align_scores": [
+            0.9487977027893066,
+            0.00011744531366275623,
+            0.3012773394584656,
+            0.00011924374848604202,
+            0.9775426387786865,
+            0.0001045928438543342,
+            0.0006285551353357732,
+            8.402912499150261e-05
+        ],
+        "align_select": "select car_makers.FullName, car_makers.Id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "How many countries has more than 3 car makers?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), car_makers.Country",
+            "select count(*), countries.CountryName",
+            "select count(1, car_makers.Country)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "countries car_makers",
+        "table_candidates": [
+            "countries car_makers",
+            "countries car_makers model_list"
+        ],
+        "align_scores": [
+            0.7720820307731628,
+            0.01014466118067503,
+            0.0008011903264559805,
+            0.008644377812743187,
+            0.0014989847550168633,
+            0.023800382390618324,
+            0.001235725125297904,
+            0.0004922752268612385
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM"
+    },
+    {
+        "question": "How many countries has more than 4 car makers?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), car_makers.Country",
+            "select count(*), countries.CountryName",
+            "select count(1, car_makers.Country)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "countries car_makers",
+        "table_candidates": [
+            "countries car_makers",
+            "countries car_makers model_list"
+        ],
+        "align_scores": [
+            0.7390984296798706,
+            0.009239266626536846,
+            0.0007900839555077255,
+            0.007733689621090889,
+            0.0013946328544989228,
+            0.020823726430535316,
+            0.0012357868254184723,
+            0.0005813126917928457
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM"
+    },
+    {
+        "question": "What is the number of countries with more than 3 car makers?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), car_makers.Country",
+            "select count(*), countries.CountryName",
+            "select count(1, car_makers.Country)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "countries car_makers",
+        "table_candidates": [
+            "countries car_makers",
+            "car_makers"
+        ],
+        "align_scores": [
+            0.7045885324478149,
+            0.003057466121390462,
+            0.0007954566390253603,
+            0.038504790514707565,
+            0.0010279924608767033,
+            0.06075437366962433,
+            0.0009959794115275145,
+            0.0003510560200084001
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM"
+    },
+    {
+        "question": "What is the number of countries with more than 4 car makers?",
+        "gold_select": "select count(*)",
+        "select_candidates": [
+            "select count(*)",
+            "select count(*), car_makers.Country",
+            "select count(*), countries.CountryName",
+            "select count(1, car_makers.Country)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            0.0,
+            1.0
+        ],
+        "gold_table": "countries car_makers",
+        "table_candidates": [
+            "countries car_makers"
+        ],
+        "align_scores": [
+            0.6408630013465881,
+            0.002810985781252384,
+            0.0007679917616769671,
+            0.030027059838175774,
+            0.0010206057922914624,
+            0.05669935420155525,
+            0.0009564000065438449,
+            0.00037643578252755105
+        ],
+        "align_select": "select count(*)",
+        "align_structure": "SELECT-FROM"
+    },
+    {
+        "question": "Show all template type codes with less than five templates.",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-UNION-SAMPLE-GROUP BY-HAVING"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9950839877128601,
+            0.00017169755301438272,
+            0.00011000435188179836,
+            0.0001648050092626363,
+            0.00010236278467345983,
+            0.00021838444808963686,
+            0.0001389104436384514,
+            0.0002776156470645219
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Show all template type codes with less than thirteen templates.",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Template_Type_Code, Templates.Template_Details",
+            "select Templates.Template_Type_Code, Templates.Version_Number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.988274335861206,
+            0.00018919591093435884,
+            0.00014841798110865057,
+            5.008198422729038e-05,
+            0.00023947398585733026,
+            5.881154356757179e-05,
+            0.00010078874765895307,
+            5.3829058742849156e-05
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Show all template type codes with less than six templates.",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-UNION-SAMPLE-GROUP BY-HAVING"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9945527911186218,
+            0.0001619619142729789,
+            0.0001089964498532936,
+            0.00016064013470895588,
+            0.00010165377170778811,
+            0.0002185167104471475,
+            0.00014192967501003295,
+            0.0002687750675249845
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Show all template type codes with less than eight templates.",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Template_Type_Code, Templates.Template_Details",
+            "select Templates.Template_Type_Code, Templates.Version_Number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9928547739982605,
+            0.0001585646823514253,
+            0.00016593006148468703,
+            5.20010398759041e-05,
+            0.00026459054788574576,
+            6.098092853790149e-05,
+            0.00010605180432321504,
+            5.5945285566849634e-05
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Show all template type codes with less than eleven templates.",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select Templates.Template_Type_Code SAMPLE-GROUP BY-HAVING-UNION-SAMPLE-GROUP BY-HAVING"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9920653700828552,
+            0.0001688435731921345,
+            0.00010683213622542098,
+            0.00015476618136744946,
+            0.00010464790830155835,
+            0.0002175000263378024,
+            0.00014952071069274098,
+            0.00027092904201708734
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of template types that have fewer than 5 templates?",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Version_Number, Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code (or Templates.Date_Effective_From)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9923093318939209,
+            0.00017968825704883784,
+            0.0003769893664866686,
+            7.606794679304585e-05,
+            0.00029094924684613943,
+            7.73135107010603e-05,
+            0.002027123933658004,
+            0.00014149592607282102
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of template types that have fewer than 13 templates?",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From, Templates.Date_Effective_To",
+            "select Templates.Version_Number, Templates.Template_Type_Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9899369478225708,
+            0.00016999879153445363,
+            0.00034476412110961974,
+            6.762681005056947e-05,
+            0.0005887465085834265,
+            6.563528586411849e-05,
+            0.0002608058857731521,
+            7.061799260554835e-05
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of template types that have fewer than 6 templates?",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From, Templates.Date_Effective_To",
+            "select Templates.Version_Number, Templates.Template_Type_Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9913926124572754,
+            0.00016114211757667363,
+            0.00039618636947125196,
+            7.11702523403801e-05,
+            0.0006369374459609389,
+            7.022473437245935e-05,
+            0.00027180713368579745,
+            7.377360452665016e-05
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of template types that have fewer than 8 templates?",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From, Templates.Date_Effective_To",
+            "select Templates.Version_Number, Templates.Template_Type_Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.990453839302063,
+            0.0001599370880285278,
+            0.00039961858419701457,
+            7.081983494572341e-05,
+            0.0006378674879670143,
+            6.983366620261222e-05,
+            0.0002688065869733691,
+            7.349623774643987e-05
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of template types that have fewer than 11 templates?",
+        "gold_select": "select Templates.Template_Type_Code",
+        "select_candidates": [
+            "select Templates.Template_Type_Code",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From",
+            "select Templates.Template_Type_Code, Templates.Date_Effective_From, Templates.Date_Effective_To",
+            "select Templates.Version_Number, Templates.Template_Type_Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Templates",
+        "table_candidates": [
+            "Templates"
+        ],
+        "align_scores": [
+            0.9889761209487915,
+            0.00018115845159627497,
+            0.00034800259163603187,
+            6.874871178297326e-05,
+            0.0005980096175335348,
+            6.773071800125763e-05,
+            0.00025797836133278906,
+            7.054596790112555e-05
+        ],
+        "align_select": "select Templates.Template_Type_Code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "List all document ids with at least three paragraphs.",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID (Paragraphs.Paragraph_ID)",
+            "select Paragraphs.Document_ID, Paragraphs.Other_Details"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9948384165763855,
+            0.00013811164535582066,
+            0.00022029211686458439,
+            5.2637864428106695e-05,
+            0.00031893773120827973,
+            6.513491825899109e-05,
+            0.0006299882079474628,
+            5.532951036002487e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the ids of documents that have 3 or more paragraphs?",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Documents.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID, Documents.Document_Name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs",
+            "Templates Documents Paragraphs",
+            "Paragraphs Documents Paragraphs"
+        ],
+        "align_scores": [
+            0.9951894283294678,
+            0.00017824496899265796,
+            0.9926328063011169,
+            0.00014537893002852798,
+            0.00028256510267965496,
+            6.215780740603805e-05,
+            0.0010709480848163366,
+            7.313847891055048e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What is the document id with 1 to 5 paragraphs?",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, Paragraphs.Other_Details",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, max(Paragraphs.Document_ID)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9953019618988037,
+            0.00011850219016196206,
+            0.00029387674294412136,
+            6.176028546178713e-05,
+            0.0002816014748532325,
+            6.0929374740226194e-05,
+            7.270747300935909e-05,
+            5.784373570349999e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What is the document id with 1 to 11 paragraphs?",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, Paragraphs.Other_Details",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, max(Paragraphs.Document_ID)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-WHERE"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9945981502532959,
+            0.9521728754043579,
+            0.00014102125714998692,
+            0.00012931207311339676,
+            0.00014759437181055546,
+            0.00012017154222121462,
+            0.00010242382995784283,
+            6.474786641774699e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-WHERE"
+    },
+    {
+        "question": "What is the document id with 1 to 6 paragraphs?",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, Paragraphs.Other_Details",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, max(Paragraphs.Document_ID)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9943937063217163,
+            9.271383169107139e-05,
+            0.0002648722438607365,
+            5.870082895853557e-05,
+            0.00026214533136226237,
+            6.78060605423525e-05,
+            7.396569708362222e-05,
+            5.2010262152180076e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What is the document id with 1 to 8 paragraphs?",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, Paragraphs.Other_Details",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, max(Paragraphs.Document_ID)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9938510656356812,
+            8.966146560851485e-05,
+            0.0002570478536654264,
+            5.889685053261928e-05,
+            0.0002588248753454536,
+            6.809649494243786e-05,
+            7.329139043577015e-05,
+            5.250451431493275e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What is the document id with 1 to 9 paragraphs?",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, Paragraphs.Other_Details",
+            "select Paragraphs.Document_ID, Paragraphs.Paragraph_Text, max(Paragraphs.Document_ID)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9929777979850769,
+            8.385701949009672e-05,
+            0.00026696486747823656,
+            5.9013731515733525e-05,
+            0.0002596890553832054,
+            6.738855154253542e-05,
+            7.397896115435287e-05,
+            5.359876377042383e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Give the ids of documents that have between one and five paragraphs.",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Documents.Document_ID",
+            "select Paragraphs.Document_ID",
+            "select t4.c1"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9920326471328735,
+            0.00014895021740812808,
+            0.9877814054489136,
+            0.00016150667215697467,
+            0.9920326471328735,
+            0.00014895021740812808,
+            0.0018995509017258883,
+            6.817419489379972e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Give the ids of documents that have between one and eleven paragraphs.",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Documents.Document_ID",
+            "select Paragraphs.Document_ID",
+            "select t4.c1"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9800511002540588,
+            0.00017980256234295666,
+            0.9594702124595642,
+            0.0001970160665223375,
+            0.9800511002540588,
+            0.00017980256234295666,
+            0.0008770423592068255,
+            6.814806693000719e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Give the ids of documents that have between one and six paragraphs.",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Documents.Document_ID",
+            "select Paragraphs.Document_ID",
+            "select t4.c1"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9885240197181702,
+            0.00016255356604233384,
+            0.9813088774681091,
+            0.0001655559753999114,
+            0.9885240197181702,
+            0.00016255356604233384,
+            0.001053685205988586,
+            6.758373638149351e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Give the ids of documents that have between one and eight paragraphs.",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Documents.Document_ID",
+            "select Paragraphs.Document_ID",
+            "select t4.c1"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.9898297190666199,
+            0.00016033071733545512,
+            0.9830917716026306,
+            0.0001621714764041826,
+            0.9898297190666199,
+            0.00016033071733545512,
+            0.0008916732622310519,
+            6.77844655001536e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Give the ids of documents that have between one and nine paragraphs.",
+        "gold_select": "select Paragraphs.Document_ID",
+        "select_candidates": [
+            "select Paragraphs.Document_ID",
+            "select Documents.Document_ID",
+            "select Paragraphs.Document_ID",
+            "select t4.c1"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Paragraphs",
+        "table_candidates": [
+            "Paragraphs",
+            "Documents Paragraphs",
+            "Templates Paragraphs"
+        ],
+        "align_scores": [
+            0.984998881816864,
+            0.00017741105693858117,
+            0.9747188687324524,
+            0.00018102239118888974,
+            0.984998881816864,
+            0.00017741105693858117,
+            0.0007834041025489569,
+            6.863263115519658e-05
+        ],
+        "align_select": "select Paragraphs.Document_ID",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the name of tourney that has more than 19 matches.",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.minutes"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9782097339630127,
+            0.00010645728616509587,
+            0.00017024032422341406,
+            5.801874431199394e-05,
+            0.00015161537157837301,
+            5.993769082124345e-05,
+            0.0001976102066691965,
+            5.6363609473919496e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the name of tourney that has more than 4 matches.",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9847999811172485,
+            9.418639092473313e-05,
+            0.0001758635917212814,
+            5.785002576885745e-05,
+            0.0001584493729751557,
+            6.189861596794799e-05,
+            0.00013279440463520586,
+            6.284519622568041e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the name of tourney that has more than 8 matches.",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9730312824249268,
+            0.00010403222404420376,
+            0.00017621979350224137,
+            5.867686923011206e-05,
+            0.00015116354916244745,
+            6.207617843756452e-05,
+            0.00012784167483914644,
+            6.306257273536175e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the name of tourney that has more than 6 matches.",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches",
+            "matches rankings"
+        ],
+        "align_scores": [
+            0.9782721996307373,
+            0.0001020375857478939,
+            0.0001761882012942806,
+            5.861725003342144e-05,
+            0.0001539914374006912,
+            6.184738595038652e-05,
+            0.0001314149412792176,
+            6.278673390625045e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the name of tourney that has more than 14 matches.",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9795173406600952,
+            0.00010546355770202354,
+            0.00016903238429222256,
+            5.8253033785149455e-05,
+            0.00015290883311536163,
+            6.08599184488412e-05,
+            0.0001316901616519317,
+            6.247466808417812e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of tournaments that have more than 19 matches?",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9748480916023254,
+            0.0001441245840396732,
+            0.00019057007739320397,
+            6.175904854899272e-05,
+            0.00019854110723827034,
+            6.169859261717647e-05,
+            0.00013878110621590167,
+            6.224008393473923e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of tournaments that have more than 4 matches?",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9839152097702026,
+            0.00013908579421695322,
+            0.00021127892250660807,
+            6.301172106759623e-05,
+            0.00021368064335547388,
+            5.9385311033111066e-05,
+            0.00013662730634678155,
+            6.0909158491995186e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of tournaments that have more than 8 matches?",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9726210832595825,
+            0.00015058406279422343,
+            0.0002068052563117817,
+            6.361669511534274e-05,
+            0.0002152012166334316,
+            6.112158735049888e-05,
+            0.00013385301281232387,
+            6.235063483472914e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of tournaments that have more than 6 matches?",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9784011840820312,
+            0.00014637976710218936,
+            0.00021166849182918668,
+            6.363969441736117e-05,
+            0.0002095881209243089,
+            6.144933286122978e-05,
+            0.00013618844968732446,
+            6.276296335272491e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of tournaments that have more than 14 matches?",
+        "gold_select": "select matches.tourney_name",
+        "select_candidates": [
+            "select matches.tourney_name",
+            "select matches.tourney_name, matches.tourney_date",
+            "select matches.tourney_name, matches.winner_hand",
+            "select matches.tourney_name, matches.winner_age"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9774017333984375,
+            0.0001487929403083399,
+            0.00019764414173550904,
+            6.165137165226042e-05,
+            0.0002065232692984864,
+            6.324813148239627e-05,
+            0.00013833424600306898,
+            6.273770850384608e-05
+        ],
+        "align_select": "select matches.tourney_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the codes of countries that have more than 60 players.",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, count(*)",
+            "select players.country_code, max(t0.c6)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches"
+        ],
+        "align_scores": [
+            0.9904345273971558,
+            0.00013429996033664793,
+            0.00046170203131623566,
+            6.628542178077623e-05,
+            0.0025960179045796394,
+            8.003349648788571e-05,
+            0.00027351558674126863,
+            6.619434134336188e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the codes of countries that have more than 44 players.",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, count(*)",
+            "select players.country_code, t0.c6",
+            "select players.country_code, max(players.birth_date)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9918592572212219,
+            0.0001369092642562464,
+            0.003324893768876791,
+            8.17612890386954e-05,
+            0.0004581904213409871,
+            7.076696783769876e-05,
+            0.00020516823860816658,
+            6.729010056005791e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the codes of countries that have more than 57 players.",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, count(*)",
+            "select players.country_code, max(players.player_id)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9901278614997864,
+            0.00013191135076340288,
+            0.0004851343110203743,
+            6.773381755920127e-05,
+            0.002548603340983391,
+            7.62033523642458e-05,
+            0.00018635451851878315,
+            6.092176408856176e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the codes of countries that have more than 47 players.",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, count(*)",
+            "select players.country_code, max(players.player_id)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9898520112037659,
+            0.00012813214561901987,
+            0.00044562856783159077,
+            7.03725527273491e-05,
+            0.0026886272244155407,
+            7.76232554926537e-05,
+            0.00018411676865071058,
+            6.116485747043043e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the codes of countries that have more than 46 players.",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, count(*)",
+            "select players.country_code, max(t0.c6)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9905365109443665,
+            0.00013265202869661152,
+            0.00046310279867611825,
+            6.906477938173339e-05,
+            0.0024823935236781836,
+            7.741776062175632e-05,
+            0.00033448575413785875,
+            6.627220864174888e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of countries with more than 60 players?",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, max(t0.c6)",
+            "select players.country_code, t0.c7"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9115105867385864,
+            0.00015267965500243008,
+            0.00046015894622541964,
+            6.776960071874782e-05,
+            0.00030588620575144887,
+            6.417826079996303e-05,
+            0.0004559998051263392,
+            6.770604522898793e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of countries with more than 44 players?",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, max(players.birth_date)",
+            "select players.country_code, players.birth_date"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.96089106798172,
+            0.00016734383825678378,
+            0.0004435694427229464,
+            6.870559445815161e-05,
+            0.00018703598470892757,
+            6.597723404411227e-05,
+            0.00014862476382404566,
+            6.303516420302913e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of countries with more than 57 players?",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, players.birth_date",
+            "select players.country_code, players.first_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings",
+            "players matches rankings"
+        ],
+        "align_scores": [
+            0.9275720119476318,
+            0.00015702712698839605,
+            0.00044883150258101523,
+            6.668376590823755e-05,
+            0.00014856227790005505,
+            6.26619003014639e-05,
+            0.00018825581355486065,
+            6.683311221422628e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of countries with more than 47 players?",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, players.birth_date",
+            "select players.country_code, players.first_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9221097826957703,
+            0.00015599826292600483,
+            0.0004342329630162567,
+            6.758051313227043e-05,
+            0.00014779914636164904,
+            6.248288991628215e-05,
+            0.00018486808403395116,
+            6.65875559207052e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the codes of countries with more than 46 players?",
+        "gold_select": "select players.country_code",
+        "select_candidates": [
+            "select players.country_code",
+            "select players.country_code, t0.c6",
+            "select players.country_code, players.birth_date",
+            "select players.country_code, max(t0.c6)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "players",
+        "table_candidates": [
+            "players",
+            "players matches",
+            "players rankings"
+        ],
+        "align_scores": [
+            0.9340572953224182,
+            0.00016475192387588322,
+            0.00044086549314670265,
+            6.788499740650877e-05,
+            0.00014704160275869071,
+            6.306522118393332e-05,
+            0.0003416391264181584,
+            6.269464938668534e-05
+        ],
+        "align_select": "select players.country_code",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the name and rank of the 5 youngest winners across all matches.",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9945122003555298,
+            5.830745067214593e-05,
+            0.0002915173245128244,
+            7.640359399374574e-05,
+            0.00029317321605049074,
+            8.112134673865512e-05,
+            0.0004178169183433056,
+            9.30783644434996e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name and rank of the 13 youngest winners across all matches.",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9937127232551575,
+            5.966993194306269e-05,
+            0.0003496337158139795,
+            7.790757808834314e-05,
+            0.00033305547549389303,
+            8.458690717816353e-05,
+            0.0005032756016589701,
+            9.508511720923707e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name and rank of the 6 youngest winners across all matches.",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9943296313285828,
+            5.816754492116161e-05,
+            0.00032115812064148486,
+            7.769064541207626e-05,
+            0.00031671850592829287,
+            8.455941133433953e-05,
+            0.00045494214282371104,
+            9.28879962884821e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name and rank of the 8 youngest winners across all matches.",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.994164764881134,
+            5.8893423556583e-05,
+            0.0003188118862453848,
+            7.688890036661178e-05,
+            0.000313442200422287,
+            8.579889981774613e-05,
+            0.0004544096882455051,
+            9.268475696444511e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Find the name and rank of the 11 youngest winners across all matches.",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9936641454696655,
+            5.9038837207481265e-05,
+            0.000344334781402722,
+            7.825902866898105e-05,
+            0.0003355834342073649,
+            8.588893251726404e-05,
+            0.0004967182176187634,
+            9.424622840015218e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and ranks of the five youngest winners across all matches?",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9941611886024475,
+            5.729671102017164e-05,
+            0.0003913002728950232,
+            8.01210044301115e-05,
+            0.00036043603904545307,
+            8.943108696257696e-05,
+            0.0004761149757541716,
+            8.70297517394647e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and ranks of the thirteen youngest winners across all matches?",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.993134617805481,
+            5.807714842376299e-05,
+            0.0004933688323944807,
+            8.114843512885273e-05,
+            0.00040560917113907635,
+            9.106531069846824e-05,
+            0.0005937975947745144,
+            8.629194780951366e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and ranks of the six youngest winners across all matches?",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9938721656799316,
+            5.796477125841193e-05,
+            0.0004443763755261898,
+            8.088914910331368e-05,
+            0.00039269562694244087,
+            9.394303924636915e-05,
+            0.0005314499139785767,
+            8.723456267034635e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and ranks of the eight youngest winners across all matches?",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select matches.winner_rank, matches.winner_name"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9935131669044495,
+            5.722660353058018e-05,
+            0.00041414532461203635,
+            7.536555494880304e-05,
+            0.00038733138353563845,
+            9.29094385355711e-05,
+            0.9936040043830872,
+            5.6854591093724594e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and ranks of the eleven youngest winners across all matches?",
+        "gold_select": "select distinct matches.winner_name, matches.winner_rank",
+        "select_candidates": [
+            "select matches.winner_name, matches.winner_rank",
+            "select matches.loser_ioc, matches.winner_rank",
+            "select matches.loser_age, matches.winner_rank",
+            "select t1.c 27, matches.winner_rank"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "matches",
+        "table_candidates": [
+            "matches"
+        ],
+        "align_scores": [
+            0.9932975172996521,
+            5.933820648351684e-05,
+            0.0004904088564217091,
+            8.229185914387926e-05,
+            0.00040854502003639936,
+            9.425386087968946e-05,
+            0.0005690461839549243,
+            8.733202412258834e-05
+        ],
+        "align_select": "select matches.winner_name, matches.winner_rank",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Who are enrolled in 3 degree programs in one semester? List the first name, middle name and last name and the id.",
+        "gold_select": "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+        "select_candidates": [
+            "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+            "select Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.first_name, Students.middle_name, Students.last_name and Students.student_id",
+            "select Students.first_name.c3, Students.middle_name, Students.last_name, Students.student_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Students Student_Enrolment",
+        "table_candidates": [
+            "Students Student_Enrolment",
+            "Degree_Programs Students Student_Enrolment",
+            "Semesters Students Student_Enrolment",
+            "Sections Students Student_Enrolment",
+            "Courses Students Student_Enrolment",
+            "Students Student_Enrolment_Courses",
+            "Degree_Programs Students Student_Enrolment_Courses",
+            "Student_Enrolment"
+        ],
+        "align_scores": [
+            0.9730699062347412,
+            0.0046312082558870316,
+            0.03669152036309242,
+            0.00044850047561340034,
+            0.9766666293144226,
+            0.005926679354161024,
+            0.0005487718153744936,
+            0.00016841718752402812
+        ],
+        "align_select": "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the first, middle, and last names, along with the ids, of all students who enrolled in 3 degree programs in one semester?",
+        "gold_select": "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+        "select_candidates": [
+            "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+            "select Students.first_name, Students.middle_name, Students.last_name",
+            "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+            "select Students.first_name, Students.middle_name, Students.last_name ainsi, Students.student_id"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Students Student_Enrolment",
+        "table_candidates": [
+            "Degree_Programs Students",
+            "Students",
+            "Students Student_Enrolment",
+            "Semesters Students",
+            "Students Student_Enrolment_Courses",
+            "Sections Students",
+            "Courses Students"
+        ],
+        "align_scores": [
+            0.9288702607154846,
+            0.31091320514678955,
+            0.03127770125865936,
+            0.022460440173745155,
+            0.9288702607154846,
+            0.31091320514678955,
+            0.003679141402244568,
+            0.0009392039501108229
+        ],
+        "align_select": "select Students.first_name, Students.middle_name, Students.last_name, Students.student_id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Show the date and id of the transcript with at least 3 course results.",
+        "gold_select": "select Transcripts.transcript_date, Transcript_Contents.transcript_id",
+        "select_candidates": [
+            "select t8.c5, Student_Enrolment_Courses.student_course_id",
+            "select t10.c5, Transcript_Contents.student_course_id",
+            "select t12.c5, t12.c0",
+            "select t9.c5, Transcripts.transcript_id"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Transcripts Transcript_Contents",
+        "table_candidates": [
+            "Transcripts",
+            "Student_Enrolment_Courses",
+            "Transcript_Contents",
+            "Semesters Student_Enrolment_Courses",
+            "Transcripts Transcript_Contents"
+        ],
+        "align_scores": [
+            0.0003484549233689904,
+            8.416248601861298e-05,
+            0.0002799946814775467,
+            8.757695468375459e-05,
+            0.0001700371940387413,
+            5.751887147198431e-05,
+            0.0005239991587586701,
+            9.257962665287778e-05
+        ],
+        "align_select": "select t8.c5, Student_Enrolment_Courses.student_course_id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What is the date and id of the transcript with at least 3 courses listed?",
+        "gold_select": "select Transcripts.transcript_date, Transcript_Contents.transcript_id",
+        "select_candidates": [
+            "select t10.c5, Transcript_Contents.student_course_id",
+            "select t8.c5, Student_Enrolment_Courses.student_course_id",
+            "select t12.c5, t12.c0",
+            "select t14.c5, t14.c0"
+        ],
+        "select_labels": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Transcripts Transcript_Contents",
+        "table_candidates": [
+            "Courses Student_Enrolment_Courses",
+            "Courses Transcripts",
+            "Courses Student_Enrolment",
+            "Courses",
+            "Courses Transcript_Contents",
+            "Semesters Student_Enrolment_Courses"
+        ],
+        "align_scores": [
+            0.0003893809043802321,
+            0.00010720655700424686,
+            0.0004956449847668409,
+            0.00010842979827430099,
+            0.00020751038391608745,
+            7.354118133662269e-05,
+            0.00021649408154189587,
+            7.39569659344852e-05
+        ],
+        "align_select": "select t10.c5, Transcript_Contents.student_course_id",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "List top 5 highest Rating TV series. List the TV series's Episode and Rating.",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.id, TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode.c1, TV_series.Rating"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9940493106842041,
+            7.221383566502482e-05,
+            0.000381272635422647,
+            8.079725375864655e-05,
+            0.0004590325988829136,
+            7.382519106613472e-05,
+            0.0006553145940415561,
+            6.98152871336788e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List top 6 highest Rating TV series. List the TV series's Episode and Rating.",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.id, TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode.c1, TV_series.Rating"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9940933585166931,
+            6.688832945656031e-05,
+            0.0003813164366874844,
+            7.702453149249777e-05,
+            0.0004643464635591954,
+            6.867611227789894e-05,
+            0.000639835954643786,
+            6.590127304662019e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List top 8 highest Rating TV series. List the TV series's Episode and Rating.",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.id, TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode.c1, TV_series.Rating"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9940395355224609,
+            6.565061630681157e-05,
+            0.0003724712587427348,
+            7.711742364335805e-05,
+            0.0004301611625123769,
+            6.678800855297595e-05,
+            0.0006215664325281978,
+            6.451932131312788e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List top 11 highest Rating TV series. List the TV series's Episode and Rating.",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.id, TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode.c1, TV_series.Rating"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9941071271896362,
+            6.524856144096702e-05,
+            0.00036825332790613174,
+            7.671496859984472e-05,
+            0.0004117750213481486,
+            6.580249464605004e-05,
+            0.0006275874911807477,
+            6.383813888533041e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "List top 7 highest Rating TV series. List the TV series's Episode and Rating.",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.id, TV_series.Episode, TV_series.Rating",
+            "select TV_series.Episode, TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Episode.c1, TV_series.Rating"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9940264225006104,
+            6.72721434966661e-05,
+            0.0003786700253840536,
+            7.774445839459077e-05,
+            0.00045368881546892226,
+            6.865712202852592e-05,
+            0.0006403423030860722,
+            6.574916915269569e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are 5 most highly rated episodes in the TV series table and what were those ratings?",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Air_Date",
+            "select 5 TV_series.Episode, TV_series.Rating",
+            "select TV_series.Air_Date, TV_series.Rating"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9941397905349731,
+            7.202196138678119e-05,
+            0.002147623570635915,
+            6.645067333010957e-05,
+            0.00045696055167354643,
+            8.388853166252375e-05,
+            0.0014221816090866923,
+            6.796563684474677e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are 6 most highly rated episodes in the TV series table and what were those ratings?",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Air_Date, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Share"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9939699172973633,
+            6.96282004355453e-05,
+            0.0022046449594199657,
+            6.461259181378409e-05,
+            0.0011668428778648376,
+            6.542338815052062e-05,
+            0.0012865205062553287,
+            5.814813630422577e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are 8 most highly rated episodes in the TV series table and what were those ratings?",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Air_Date, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Share"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9938092827796936,
+            6.956368451938033e-05,
+            0.0022897643502801657,
+            6.51776572340168e-05,
+            0.0011463019764050841,
+            6.563810165971518e-05,
+            0.0011983122676610947,
+            5.881603283341974e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are 11 most highly rated episodes in the TV series table and what were those ratings?",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Air_Date, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Share"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9936835765838623,
+            6.73653485137038e-05,
+            0.002163611352443695,
+            6.362397834891453e-05,
+            0.0011461295653134584,
+            6.380821287166327e-05,
+            0.0012112314580008388,
+            5.816122575197369e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are 7 most highly rated episodes in the TV series table and what were those ratings?",
+        "gold_select": "select TV_series.Episode, TV_series.Rating",
+        "select_candidates": [
+            "select TV_series.Episode, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Air_Date",
+            "select TV_series.Air_Date, TV_series.Rating",
+            "select TV_series.Rating, TV_series.Share"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "TV_series",
+        "table_candidates": [
+            "TV_series"
+        ],
+        "align_scores": [
+            0.9939040541648865,
+            7.036249007796869e-05,
+            0.0022758585400879383,
+            6.576396845048293e-05,
+            0.0012374947546049953,
+            6.650125578744337e-05,
+            0.0012440604623407125,
+            5.91079551668372e-05
+        ],
+        "align_select": "select TV_series.Episode, TV_series.Rating",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names of countries that speak more than 5 languages, as well as how many languages they speak?",
+        "gold_select": "select count(countrylanguage.Language), country.Name",
+        "select_candidates": [
+            "select country.Name, count(distinct countrylanguage.Language)",
+            "select country.Name, count(countrylanguage.Language)",
+            "select country.Name, count(*)",
+            "select country.Name, count(distinct country.Name)"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country countrylanguage",
+        "table_candidates": [
+            "country countrylanguage"
+        ],
+        "align_scores": [
+            0.14772215485572815,
+            9.819505066843703e-05,
+            0.014248349703848362,
+            9.053453686647117e-05,
+            0.8131695985794067,
+            0.0001295723777730018,
+            0.00022408709628507495,
+            6.902632594574243e-05
+        ],
+        "align_select": "select country.Name, count(*)",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of countries that speak more than 11 languages, as well as how many languages they speak?",
+        "gold_select": "select count(countrylanguage.Language), country.Name",
+        "select_candidates": [
+            "select country.Name, count(distinct countrylanguage.Language)",
+            "select country.Name, count(countrylanguage.Language)",
+            "select country.Name, count(*)",
+            "select country.Name, count(distinct country.Name)"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country countrylanguage",
+        "table_candidates": [
+            "country countrylanguage"
+        ],
+        "align_scores": [
+            0.11176273971796036,
+            0.07998045533895493,
+            0.009973620995879173,
+            0.01630537584424019,
+            0.585217297077179,
+            0.563563883304596,
+            0.00021927493799012154,
+            0.00016943432274274528
+        ],
+        "align_select": "select country.Name, count(*)",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of countries that speak more than 6 languages, as well as how many languages they speak?",
+        "gold_select": "select count(countrylanguage.Language), country.Name",
+        "select_candidates": [
+            "select country.Name, count(distinct countrylanguage.Language)",
+            "select country.Name, count(countrylanguage.Language)",
+            "select country.Name, count(*)",
+            "select country.Name, countrylanguage.Language"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country countrylanguage",
+        "table_candidates": [
+            "country countrylanguage"
+        ],
+        "align_scores": [
+            0.15677465498447418,
+            0.11747793108224869,
+            0.012434156611561775,
+            0.01884571649134159,
+            0.7328315377235413,
+            0.7173432111740112,
+            0.06530946493148804,
+            0.15943391621112823
+        ],
+        "align_select": "select country.Name, count(*)",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of countries that speak more than 8 languages, as well as how many languages they speak?",
+        "gold_select": "select count(countrylanguage.Language), country.Name",
+        "select_candidates": [
+            "select country.Name, count(distinct countrylanguage.Language)",
+            "select country.Name, count(countrylanguage.Language)",
+            "select country.Name, count(*)",
+            "select country.Name, countrylanguage.Language"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country countrylanguage",
+        "table_candidates": [
+            "country countrylanguage"
+        ],
+        "align_scores": [
+            0.12267465144395828,
+            9.715459600556642e-05,
+            0.010340696200728416,
+            8.886643627192825e-05,
+            0.6590980887413025,
+            0.00012508750660344958,
+            0.04655475169420242,
+            0.00010414775897515938
+        ],
+        "align_select": "select country.Name, count(*)",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of countries that speak more than 9 languages, as well as how many languages they speak?",
+        "gold_select": "select count(countrylanguage.Language), country.Name",
+        "select_candidates": [
+            "select country.Name, count(distinct countrylanguage.Language)",
+            "select country.Name, count(countrylanguage.Language)",
+            "select country.Name, count(*)",
+            "select country.Name, countrylanguage.Language"
+        ],
+        "select_labels": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country countrylanguage",
+        "table_candidates": [
+            "country countrylanguage"
+        ],
+        "align_scores": [
+            0.11098095774650574,
+            9.803152352105826e-05,
+            0.00997775699943304,
+            9.147088712779805e-05,
+            0.6248031854629517,
+            0.0001319058210356161,
+            0.04028371348977089,
+            0.0001051921644830145
+        ],
+        "align_select": "select country.Name, count(*)",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names and areas of countries with the top 4 largest area?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.SurfaceArea)",
+            "select country.Name, country.SurfaceArea,"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9919861555099487,
+            6.37883713352494e-05,
+            0.0008002304239198565,
+            6.321810360532254e-05,
+            0.003215319477021694,
+            6.006717376294546e-05,
+            0.004860611166805029,
+            6.691321323160082e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and areas of countries with the top 6 largest area?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.SurfaceArea)",
+            "select country.Name, country.SurfaceArea,"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9918906688690186,
+            6.234730244614184e-05,
+            0.0009024234022945166,
+            6.306816794676706e-05,
+            0.0032098330557346344,
+            5.859634620719589e-05,
+            0.005073973909020424,
+            6.609084084630013e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and areas of countries with the top 11 largest area?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.SurfaceArea)",
+            "select country.Name, country.SurfaceArea,"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9916953444480896,
+            6.650138675468042e-05,
+            0.0009297295473515987,
+            6.816523091401905e-05,
+            0.003469158662483096,
+            6.262140232138336e-05,
+            0.005067640449851751,
+            7.027389801805839e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and areas of countries with the top 7 largest area?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.SurfaceArea)",
+            "select country.Name, country.SurfaceArea,"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9918195009231567,
+            6.338978710118681e-05,
+            0.0009908603969961405,
+            6.413396477000788e-05,
+            0.003338004695251584,
+            5.979752677376382e-05,
+            0.005001720041036606,
+            6.711937749059871e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names and areas of countries with the top 14 largest area?",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.Region",
+            "select country.Name, country.Continent",
+            "select country.Name, country.SurfaceArea)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.991786539554596,
+            6.705003761453554e-05,
+            0.0009149169782176614,
+            6.781977572245523e-05,
+            0.0005840383819304407,
+            7.495043973904103e-05,
+            0.0034827820491045713,
+            6.152410060167313e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names and surface areas of the 4 largest countries.",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Code",
+            "select country.Name, country.SurfaceArea, country.Region",
+            "select country.Name, country.SurfaceArea, country.IndepYear"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9943960905075073,
+            6.487468635896221e-05,
+            0.0002730341220740229,
+            5.2159168262733147e-05,
+            0.00013830432726535946,
+            5.1598352001747116e-05,
+            0.00018516498676035553,
+            4.5452801714418456e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names and surface areas of the 6 largest countries.",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Code",
+            "select country.Name, country.SurfaceArea, country.Region",
+            "select country.Name, country.SurfaceArea, country.IndepYear"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9941725134849548,
+            6.565556395798922e-05,
+            0.00025221993564628065,
+            5.1703165809158236e-05,
+            0.00013446668162941933,
+            5.0922353693749756e-05,
+            0.00020988147298339754,
+            4.5073644287185743e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names and surface areas of the 11 largest countries.",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Code",
+            "select country.Name, country.SurfaceArea, country.Region",
+            "select country.Name, country.SurfaceArea)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9940193891525269,
+            6.652003503404558e-05,
+            0.0002220961614511907,
+            5.149910066393204e-05,
+            0.00013151248276699334,
+            5.217449142946862e-05,
+            0.0017737536691129208,
+            6.580795161426067e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names and surface areas of the 7 largest countries.",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Code",
+            "select country.Name, country.SurfaceArea, country.Region",
+            "select country.Name, country.SurfaceArea)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9939623475074768,
+            6.909157673362643e-05,
+            0.00022219614766072482,
+            5.402107854024507e-05,
+            0.00012896026601083577,
+            5.2724779379786924e-05,
+            0.0017539078835397959,
+            6.703264079988003e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names and surface areas of the 14 largest countries.",
+        "gold_select": "select country.Name, country.SurfaceArea",
+        "select_candidates": [
+            "select country.Name, country.SurfaceArea",
+            "select country.Name, country.SurfaceArea, country.Code",
+            "select country.Name, country.SurfaceArea, country.Region",
+            "select country.Name, country.SurfaceArea)"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.994040310382843,
+            6.576516170753166e-05,
+            0.0002137476985808462,
+            5.160893124411814e-05,
+            0.00013005886285100132,
+            5.151752338861115e-05,
+            0.001795594347640872,
+            6.451550143538043e-05
+        ],
+        "align_select": "select country.Name, country.SurfaceArea",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are names of countries with the top 5 largest population?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.LocalName"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9888477325439453,
+            5.551718641072512e-05,
+            0.0006755372742190957,
+            5.719397449865937e-05,
+            0.001695837127044797,
+            6.076353747630492e-05,
+            0.0024040639400482178,
+            5.9607886214507744e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are names of countries with the top 13 largest population?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.LocalName"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9882646799087524,
+            5.34579849045258e-05,
+            0.0008267139783129096,
+            5.3563919209409505e-05,
+            0.00156493263784796,
+            5.7272351114079356e-05,
+            0.0028043624479323626,
+            5.81090098421555e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are names of countries with the top 6 largest population?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.LocalName"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.989345371723175,
+            5.245411739451811e-05,
+            0.0007308393251150846,
+            5.3168445447226986e-05,
+            0.0017287821974605322,
+            5.569329368881881e-05,
+            0.002735140034928918,
+            5.6183307606261224e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are names of countries with the top 8 largest population?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9893988370895386,
+            5.131462967256084e-05,
+            0.0007799924351274967,
+            5.2489194786176085e-05,
+            0.00167469575535506,
+            5.484992652782239e-05,
+            0.00039015861693769693,
+            5.243065970716998e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are names of countries with the top 11 largest population?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.LocalName"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9887247681617737,
+            5.398955909186043e-05,
+            0.0007838524761609733,
+            5.3968658903613687e-05,
+            0.00159920915029943,
+            5.675757347489707e-05,
+            0.002615587553009391,
+            5.820872320327908e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 5 most populated countries.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9954941272735596,
+            5.815257100039162e-05,
+            0.00038132478948682547,
+            5.2272102038841695e-05,
+            0.0007631879416294396,
+            5.33976563019678e-05,
+            0.00017387208936270326,
+            5.226672510616481e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 13 most populated countries.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9947933554649353,
+            5.608096034848131e-05,
+            0.00031951081473380327,
+            4.9917431169888005e-05,
+            0.0008342571672983468,
+            5.185179179534316e-05,
+            0.00017417874187231064,
+            4.877171159023419e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 6 most populated countries.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9954451322555542,
+            5.53610734641552e-05,
+            0.0003931154788006097,
+            5.040068572270684e-05,
+            0.0008562171133235097,
+            5.2309504098957404e-05,
+            0.0008857087232172489,
+            5.354001768864691e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 8 most populated countries.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9953228831291199,
+            5.554743256652728e-05,
+            0.0003516447322908789,
+            5.0322258175583556e-05,
+            0.0008549930644221604,
+            5.1938197429990396e-05,
+            0.0001759436127031222,
+            4.989692024537362e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 11 most populated countries.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9947475790977478,
+            5.835511547047645e-05,
+            0.0003210408322047442,
+            5.0784292398020625e-05,
+            0.0008184824837371707,
+            5.233310366747901e-05,
+            0.0007616996299475431,
+            5.3463685617316514e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names of the nations with the 5 lowest populations?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.LocalName",
+            "select country.Name, country.Capital",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9876672029495239,
+            6.0744590882677585e-05,
+            0.005441529676318169,
+            5.8550158428261057e-05,
+            0.0004168744198977947,
+            5.363915624911897e-05,
+            0.0003305892751086503,
+            5.468723247759044e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names of the nations with the 13 lowest populations?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.LocalName",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9878714084625244,
+            5.7804136304184794e-05,
+            0.006622902117669582,
+            5.680608228431083e-05,
+            0.0004158591036684811,
+            5.2687886636704206e-05,
+            0.0009267904097214341,
+            5.1901908591389656e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names of the nations with the 6 lowest populations?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.LocalName",
+            "select country.Name, country.Capital",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9879679679870605,
+            5.614602559944615e-05,
+            0.006474677007645369,
+            5.580354991252534e-05,
+            0.00039915560046210885,
+            5.137054176884703e-05,
+            0.0003505862841848284,
+            5.3503878007177263e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names of the nations with the 8 lowest populations?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.LocalName",
+            "select country.Name, country.Capital",
+            "select country.Name, country.HeadOfState"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9880313873291016,
+            5.436340143205598e-05,
+            0.006142262369394302,
+            5.497214806382544e-05,
+            0.00039246544474735856,
+            5.105071977595799e-05,
+            0.00034767776378430426,
+            5.250010872259736e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "What are the names of the nations with the 11 lowest populations?",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.LocalName",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.987221896648407,
+            5.8415251260157675e-05,
+            0.00553588941693306,
+            5.687351949745789e-05,
+            0.0004397394077386707,
+            5.336833419278264e-05,
+            0.0008930974872782826,
+            5.214256088947877e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 5 countries with the fewest people.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.Population"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9923680424690247,
+            5.767298353021033e-05,
+            0.0004070468130521476,
+            5.1619317673612386e-05,
+            0.0010598747758194804,
+            5.495227742358111e-05,
+            0.0007559017976745963,
+            5.221625542617403e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 13 countries with the fewest people.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.9875199794769287,
+            5.372710802475922e-05,
+            0.0004486422403715551,
+            5.016754585085437e-05,
+            0.0008173941168934107,
+            5.1034898206125945e-05,
+            0.0010618859669193625,
+            5.25370633113198e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 6 countries with the fewest people.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Code",
+            "select country.Name, country.Population"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.991830050945282,
+            5.4070245823822916e-05,
+            0.0004240007547196001,
+            5.008131483918987e-05,
+            0.001098377862945199,
+            5.329748455551453e-05,
+            0.000834678125102073,
+            5.136104300618172e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 8 countries with the fewest people.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.991417646408081,
+            5.440852328320034e-05,
+            0.0004013813741039485,
+            5.0502199883339927e-05,
+            0.0008016324718482792,
+            5.114051964483224e-05,
+            0.0009892723755910993,
+            5.3171585022937506e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Return the names of the 11 countries with the fewest people.",
+        "gold_select": "select country.Name",
+        "select_candidates": [
+            "select country.Name",
+            "select country.Name, country.Capital",
+            "select country.Name, country.Population",
+            "select country.Name, country.Code"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "structure_candidates": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "country",
+        "table_candidates": [
+            "country"
+        ],
+        "align_scores": [
+            0.987772524356842,
+            5.60299631615635e-05,
+            0.0004226355522405356,
+            5.121787762618624e-05,
+            0.0008100503473542631,
+            5.160996806807816e-05,
+            0.0010378496954217553,
+            5.3320618462748826e-05
+        ],
+        "align_select": "select country.Name",
+        "align_structure": "SELECT-FROM-ORDER BY-LIMIT"
+    },
+    {
+        "question": "Show the names of high schoolers who have at least 2 friends.",
+        "gold_select": "select Highschooler.name",
+        "select_candidates": [
+            "select Highschooler.name",
+            "select Highschooler.name, Friend.student_id",
+            "select Highschooler.name, Friend.friend_id",
+            "select Highschooler.name, t1.c2"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Highschooler Friend",
+        "table_candidates": [
+            "Highschooler Friend"
+        ],
+        "align_scores": [
+            0.9760337471961975,
+            7.500241190427914e-05,
+            0.0017974372021853924,
+            7.768026989651844e-05,
+            0.00041654985398054123,
+            7.04386766301468e-05,
+            0.00042731378925964236,
+            7.135978376027197e-05
+        ],
+        "align_select": "select Highschooler.name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of high schoolers who have 2 or more friends?",
+        "gold_select": "select Highschooler.name",
+        "select_candidates": [
+            "select Highschooler.name",
+            "select Highschooler.name, Friend.student_id",
+            "select Highschooler.name, Friend.friend_id",
+            "select Highschooler.name, t1.c2"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Highschooler Friend",
+        "table_candidates": [
+            "Highschooler Friend"
+        ],
+        "align_scores": [
+            0.9761841297149658,
+            0.00010979015496559441,
+            0.001099834800697863,
+            9.730525925988331e-05,
+            0.00034442933974787593,
+            7.848862878745422e-05,
+            0.0003882103774230927,
+            8.592351514380425e-05
+        ],
+        "align_select": "select Highschooler.name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Show the names of students who have a grade higher than 5 and have at least 3 friends.",
+        "gold_select": "select Highschooler.name",
+        "select_candidates": [
+            "select Highschooler.name",
+            "select Highschooler.name, Highschooler.grade",
+            "select Highschooler.name, Highschooler.ID",
+            "select Highschooler.name - Highschooler.grade"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "Highschooler Friend",
+        "table_candidates": [
+            "Highschooler Friend",
+            "Highschooler Friend Likes"
+        ],
+        "align_scores": [
+            0.28742915391921997,
+            0.12170042097568512,
+            0.0009818391408771276,
+            0.0003489982627797872,
+            0.00029804540099576116,
+            0.0002099659468512982,
+            0.0003945716889575124,
+            0.0001657499378779903
+        ],
+        "align_select": "select Highschooler.name",
+        "align_structure": "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the names of high schoolers who have a grade of over 5 and have 3 or more friends?",
+        "gold_select": "select Highschooler.name",
+        "select_candidates": [
+            "select Highschooler.name",
+            "select Highschooler.name, Highschooler.grade",
+            "select Highschooler.name, Highschooler.ID",
+            "select Highschooler.name, t0.c3"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            0.0,
+            0.0
+        ],
+        "gold_table": "Highschooler Friend",
+        "table_candidates": [
+            "Highschooler Friend",
+            "Highschooler Friend Likes"
+        ],
+        "align_scores": [
+            0.09587765485048294,
+            0.0816153883934021,
+            0.00047033122973516583,
+            0.0002655336866155267,
+            0.00025842987815849483,
+            0.0002106230240315199,
+            0.0002792460727505386,
+            0.00014835686306469142
+        ],
+        "align_select": "select Highschooler.name",
+        "align_structure": "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals live in the state of Indiana or have done treatment on more than 5 treatments? List his or her id, last name and cell phone.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.14725986123085022,
+            0.004684996325522661,
+            0.00022421084577217698,
+            0.00015936318959575146,
+            0.09819559752941132,
+            0.004836095031350851,
+            0.0036261898931115866,
+            0.0006443835445679724
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals live in the state of Indiana or have done treatment on more than 11 treatments? List his or her id, last name and cell phone.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Sizes Professionals Treatments"
+        ],
+        "align_scores": [
+            0.18540683388710022,
+            0.0056645795702934265,
+            0.00023642348241992295,
+            0.00016261806013062596,
+            0.09892603754997253,
+            0.005115248262882233,
+            0.004406160209327936,
+            0.000688802043441683
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals live in the state of Indiana or have done treatment on more than 6 treatments? List his or her id, last name and cell phone.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.16665272414684296,
+            0.004898786079138517,
+            0.00022787789930589497,
+            0.00015933126269374043,
+            0.10161949694156647,
+            0.004924575332552195,
+            0.004058371763676405,
+            0.000650936271995306
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals live in the state of Indiana or have done treatment on more than 8 treatments? List his or her id, last name and cell phone.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments"
+        ],
+        "align_scores": [
+            0.16607531905174255,
+            0.004874175880104303,
+            0.0002247654047096148,
+            0.00015755461936350912,
+            0.09592106193304062,
+            0.0046910750679671764,
+            0.004147685598582029,
+            0.0006609332049265504
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals live in the state of Indiana or have done treatment on more than 9 treatments? List his or her id, last name and cell phone.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.1778651475906372,
+            0.005175186321139336,
+            0.00022918832837603986,
+            0.0001580987882334739,
+            0.10034935921430588,
+            0.0047926935367286205,
+            0.004080690909177065,
+            0.0006556763546541333
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the id, last name and cell phone of the professionals who live in the state of Indiana or have performed more than five treatments.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.7729560136795044,
+            0.06503406912088394,
+            0.000539541884791106,
+            0.0002863477566279471,
+            0.6487388014793396,
+            0.04608544334769249,
+            0.05722978711128235,
+            0.00294158305041492
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the id, last name and cell phone of the professionals who live in the state of Indiana or have performed more than eleven treatments.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments"
+        ],
+        "align_scores": [
+            0.7863854765892029,
+            0.0013277630787342787,
+            0.0005407968419604003,
+            0.00017790230049286038,
+            0.5801597833633423,
+            0.0006639256607741117,
+            0.06845249235630035,
+            0.0004931556177325547
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the id, last name and cell phone of the professionals who live in the state of Indiana or have performed more than six treatments.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.7673066854476929,
+            0.06199211627244949,
+            0.0005665202625095844,
+            0.00028496506274677813,
+            0.5969994068145752,
+            0.0402468778192997,
+            0.06462641805410385,
+            0.0030064978636801243
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the id, last name and cell phone of the professionals who live in the state of Indiana or have performed more than eight treatments.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.7673757076263428,
+            0.06330950558185577,
+            0.0005512559437192976,
+            0.0002815239131450653,
+            0.6242133975028992,
+            0.04562283679842949,
+            0.06835266202688217,
+            0.003280449891462922
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the id, last name and cell phone of the professionals who live in the state of Indiana or have performed more than nine treatments.",
+        "gold_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.last_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.last_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.last_name, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Charges Professionals Treatments"
+        ],
+        "align_scores": [
+            0.7661802768707275,
+            0.06716363877058029,
+            0.0005451355245895684,
+            0.0002852048201020807,
+            0.6075336933135986,
+            0.046053964644670486,
+            0.06703250110149384,
+            0.003260417375713587
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.last_name, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals have done at least three treatments? List the professional's id, role, and first name.",
+        "gold_select": "select Professionals.professional_id, Professionals.role_code, Professionals.first_name",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.role_code, Professionals.first_name",
+            "select Treatments.professional_id, Professionals.role_code, Professionals.first_name",
+            "select Professionals.professional_id, Professionals.first_name, Professionals.role_code",
+            "select t8.c2, Professionals.role_code, Professionals.first_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments"
+        ],
+        "align_scores": [
+            0.9256135821342468,
+            9.212978329742327e-05,
+            0.04197891801595688,
+            9.540918108541518e-05,
+            0.9146294593811035,
+            9.350440086564049e-05,
+            0.0006332859047688544,
+            6.723943806719035e-05
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.role_code, Professionals.first_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "What are the id, role, and first name of the professionals who have performed three or more treatments?",
+        "gold_select": "select Professionals.professional_id, Professionals.role_code, Professionals.first_name",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.role_code, Professionals.first_name",
+            "select Treatments.professional_id, Professionals.role_code, Professionals.first_name",
+            "select t8.c2, Professionals.role_code, Professionals.first_name",
+            "select Sizes.size_code, Professionals.role_code, Professionals.first_name"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Breeds Professionals Treatments"
+        ],
+        "align_scores": [
+            0.8911742568016052,
+            0.00012174801668152213,
+            0.03497229516506195,
+            0.0001163273846032098,
+            0.0006781374686397612,
+            6.91613313392736e-05,
+            0.0003296281211078167,
+            7.09670057403855e-05
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.role_code, Professionals.first_name",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Which professionals have done at least three types of treatments? List the professional id and cell phone.",
+        "gold_select": "select Professionals.professional_id, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Charges Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Treatments"
+        ],
+        "align_scores": [
+            0.9766262173652649,
+            0.00020892152679152787,
+            0.23245209455490112,
+            0.0001556198694743216,
+            0.0003366031451150775,
+            9.117687295656651e-05,
+            0.19079992175102234,
+            0.00020883709657937288
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    },
+    {
+        "question": "Find the id and cell phone of the professionals who operate three or more types of treatments.",
+        "gold_select": "select Professionals.professional_id, Professionals.cell_number",
+        "select_candidates": [
+            "select Professionals.professional_id, Professionals.cell_number",
+            "select Professionals.first_name, Professionals.cell_number",
+            "select Treatments.professional_id, Professionals.cell_number",
+            "select Professionals.role_code, Professionals.cell_number"
+        ],
+        "select_labels": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "gold_structure": "SELECT-FROM-GROUP BY-HAVING",
+        "structure_candidates": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ],
+        "structure_labels": [
+            1.0,
+            0.0
+        ],
+        "gold_table": "Professionals Treatments",
+        "table_candidates": [
+            "Professionals Treatments",
+            "Dogs Professionals Treatments",
+            "Treatment_Types Professionals Treatments",
+            "Owners Professionals Treatments",
+            "Charges Professionals Treatments",
+            "Breeds Professionals Treatments",
+            "Sizes Professionals Treatments",
+            "Sizes Treatments"
+        ],
+        "align_scores": [
+            0.9769815802574158,
+            0.0001151288379332982,
+            0.0004788987571373582,
+            9.390435297973454e-05,
+            0.8252580165863037,
+            0.00010533028398640454,
+            0.8004883527755737,
+            0.00010513701272429898
+        ],
+        "align_select": "select Professionals.professional_id, Professionals.cell_number",
+        "align_structure": "SELECT-FROM-GROUP BY-HAVING"
+    }
+]

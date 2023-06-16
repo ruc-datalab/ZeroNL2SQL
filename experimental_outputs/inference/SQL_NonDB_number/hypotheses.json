@@ -1,0 +1,5111 @@
+[
+    {
+        "structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GAGEMENT-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c1",
+        "topk_preds": [
+            "select t1.c1",
+            "select t1.c1, t0.c1",
+            "select t1.c1, t2.c3",
+            "select t1.c1, t0.c0",
+            "select t1.c1, t0.c2",
+            "select t1.c1, t0.c3",
+            "select t1.c1, t1.c0",
+            "select t1.c1, t0.c01"
+        ]
+    },
+    {
+        "structure": "t0 t1 t2",
+        "topk_preds": [
+            "t0 t1 t2",
+            "t0 t1 t2(t2.c1)",
+            "t0 t1 t2 (c3)",
+            "t1 t2",
+            "t0 t1 t2 (t2.c3)",
+            "t0 t1 t2 (t2",
+            "t0 t1 t2(t2.c2)",
+            "t0 t1 t2(t2.c3)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-WHERE-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c1",
+        "topk_preds": [
+            "select t1.c1",
+            "select t1.c1, t0.c1",
+            "select t1.c1, t0.c0",
+            "select t1.c1, t0.c2",
+            "select t1.c1, t0.c3",
+            "select t1.c1, t2.c3",
+            "select t1.c1, t1.c0",
+            "select t1.c1, t0.c4"
+        ]
+    },
+    {
+        "structure": "t0 t1 t2",
+        "topk_preds": [
+            "t0 t1 t2",
+            "t0 t1 t2 (http://www.t2.c3)",
+            "t0 t1 t2 (http://www.car1.c3)",
+            "t1 t2",
+            "t0 t1 t2 (http://www.car2.c3)",
+            "t0 t1 t2 (c3)",
+            "t0 t1 t2 (http://www.car_1.c3)",
+            "t0 t1 t2 (http://t2.c3)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GAMMA-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GAMMA-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GAGMENT-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t1.c1",
+        "topk_preds": [
+            "select t1.c1",
+            "select t1.c1, t0.c1",
+            "select t1.c1, t0.c0",
+            "select t1.c1, t0.c2",
+            "select t1.c1, t0.c3",
+            "select t1.c1, t2.c3",
+            "select t1.c1, t1.c0",
+            "select t1.c1, t0.c4"
+        ]
+    },
+    {
+        "structure": "t0 t1 t2",
+        "topk_preds": [
+            "t0 t1 t2",
+            "t0 t2",
+            "t0 t1",
+            "t1 t2",
+            "t0 t1 t2(t2.c1)",
+            "t0 t1 t2 (t2",
+            "t0 t1 t2 (c3)",
+            "t0 t1 t2 (c0 t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GAMMA-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GAMMA-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GHOST-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c1",
+        "topk_preds": [
+            "select t1.c1",
+            "select t1.c1, t0.c1",
+            "select t1.c1, t0.c2",
+            "select t1.c1, t0.c0",
+            "select t1.c1, t0.c3",
+            "select t1.c1 de, t0.c1",
+            "select t1.c1 de, t0.c0",
+            "select t1.c1, t0.c4"
+        ]
+    },
+    {
+        "structure": "t0 t1 t2",
+        "topk_preds": [
+            "t0 t1 t2",
+            "t0 t2",
+            "t0 t1",
+            "t1 t2",
+            "t0 t1 t2(t2.c1)",
+            "t0 t1 t2 (t2",
+            "t0 t1 t2 (c3)",
+            "t0 t1 de t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING, SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t2.c2, t2.c0",
+        "topk_preds": [
+            "select t2.c2, t2.c0",
+            "select t2.c1, t2.c2, t2.c0",
+            "select t2.c2, t3.c1, t3.c0",
+            "select t2.c2, t4.c1, t2.c0",
+            "select t2.c1, t2.c2, t3.c0",
+            "select t2.c4, t2.c2, t2.c0",
+            "select t2.c1, t2.c2, t3.c1",
+            "select t2.c1, t2.c2, t2c0"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3 t4",
+            "t1 t2 t3 t4",
+            "t2 t3",
+            "t2. t3 t4",
+            "t2, t3 t4",
+            "t1 t3 t4",
+            "t 2 t3 t4",
+            "t2 t3 and t4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING, SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t2.c2, t2.c0",
+        "topk_preds": [
+            "select t2.c2, t2.c0",
+            "select t2.c1, t2.c2, t2.c0",
+            "select t2.c2, t3.c1, t3.c0",
+            "select t2.c2, t4.c1, t2.c0",
+            "select t2.c4, t2.c2, t2.c0",
+            "select t2.c2, t3.c1, t2.c0",
+            "select t2.c1, t2.c2, t3.c1",
+            "select t2.c2, t3.c1, t4.c0"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3 t4",
+            "t1 t2 t3 t4",
+            "t2. t3 t4",
+            "t2, t3 t4",
+            "t2 t3, t4",
+            "t2 t 3 t4",
+            "t2 t3",
+            "t2 t4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING DIRECT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t2.c2, t2.c0",
+        "topk_preds": [
+            "select t2.c2, t3.c1",
+            "select t2.c2, t2.c0",
+            "select t2.c1, t3.c1",
+            "select t2.c2, t3.c0",
+            "select t2.c1, t3.c0",
+            "select t2.c1, t2.c0",
+            "select t3.c1, t3.c0",
+            "select t2.c0, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 t4",
+            "t2.c1, t3.c1",
+            "t2.c1, t3.c0",
+            "t3 t4",
+            "t0 t2 t3",
+            "t2 t3 and t4",
+            "t2 t3 (t4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING DIRECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROMGROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t2.c2, t2.c0",
+        "topk_preds": [
+            "select t2.c2, t2.c0",
+            "select t2.c2, t3.c1",
+            "select t2.c1, t2.c0",
+            "select t2.c2, t3.c0",
+            "select t2.c1, t3.c1",
+            "select t2.c1, t3.c0",
+            "select t2.c2, t4.c1",
+            "select t2.c0, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 t4",
+            "t2.c1, t3.c1",
+            "t2, t3 t4",
+            "t2 t3 and t4",
+            "t2.c1, t3.c0",
+            "t0 t2 t3 t4",
+            "t2 t3 (t4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM QUANTITIES-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(*)",
+        "topk_preds": [
+            "select count(*)",
+            "select count(*), t2.c3",
+            "select count(*), t1.c1",
+            "select count(1, t2.c3)",
+            "select count(distinct t1.c1)",
+            "select count(*), t1.c0",
+            "select count(t1.c1)",
+            "select count(*) dependant on t2.c3"
+        ]
+    },
+    {
+        "structure": "t1 t2",
+        "topk_preds": [
+            "t1 t2",
+            "t1 t2 (c3)",
+            "t1, t2",
+            "t1 t2(c3)",
+            "t1 t2 ",
+            "t1 t2 t3",
+            "t1. t2",
+            "t1, t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM groups BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(*)",
+        "topk_preds": [
+            "select count(*)",
+            "select count(*), t2.c3",
+            "select count(*), t1.c1",
+            "select count(1, t2.c3)",
+            "select count(distinct t1.c1)",
+            "select count(1, t1.c0)",
+            "select count(*), t1.c0",
+            "select count(1, t1.c1)"
+        ]
+    },
+    {
+        "structure": "t1 t2",
+        "topk_preds": [
+            "t1 t2",
+            "t1 t2 (c3)",
+            "t1 t2(t2.c3)",
+            "t1 t2(c3)",
+            "t1 t2 ",
+            "t1 t2 t3",
+            "t1, t2",
+            "t1, t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM",
+            "SELECT-FROM QUARTZ-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM groups BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(*)",
+        "topk_preds": [
+            "select count(*)",
+            "select count(*), t2.c3",
+            "select count(*), t1.c1",
+            "select count(1, t2.c3)",
+            "select count(*), t1.c0",
+            "select count(*),",
+            "select count(*) dependant on t2.c3",
+            "select count(t1.c1)"
+        ]
+    },
+    {
+        "structure": "t1 t2",
+        "topk_preds": [
+            "t1 t2",
+            "t2",
+            "t1 t2 (c3)",
+            "t1, t2",
+            "t1 t2(c3)",
+            "t1 t2 ",
+            "t1, t2",
+            "t1. t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM",
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM groups BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM",
+            "SELECT-FROM QUANTUM-GROUP BY-HAVING",
+            "SELECT-FROM QUANTITIES-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(*)",
+        "topk_preds": [
+            "select count(*)",
+            "select count(*), t2.c3",
+            "select count(*), t1.c1",
+            "select count(1, t2.c3)",
+            "select count(*), t1.c0",
+            "select count(*),",
+            "select count(*) dependant on t2.c3",
+            "select count(*), t0.c1"
+        ]
+    },
+    {
+        "structure": "t1 t2",
+        "topk_preds": [
+            "t1 t2",
+            "t1 t2 (http://www.t2.c3)",
+            "t1 t2 (http://www.c1-t2.c3)",
+            "t1 t2 (http://t2.c3)",
+            "t1 t2 (http://www.car_1.c1)",
+            "t1 t2 (http://www.c1c0.c1)",
+            "t1 t2 (http://www.car_2.c3)",
+            "t1 t2 (http://www.c1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ACCESS-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SAMPLE-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SIMPLE-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING",
+            "select t1.c2, t1.c3",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SUBSTRACT-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.template-type-code.c2)",
+            "t1 (https://www.template-type_code.c2)",
+            "t1 (https://www.template-type.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (http://www.template-types.c2)",
+            "t1 (https://www.template-types.c2)",
+            "t1 (https://www.template-type-codes.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-IN-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c5",
+            "select t1.c2, t1.c1",
+            "select t1.c2, t1.c13",
+            "select t1.c2, t1.c4",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2, t1.c9"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.template-type-code.c2)",
+            "t1 (https://www.template-type_code.c2)",
+            "t1 (http://www.template-type_code.c2)",
+            "t1 (https://www.template-type.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template-types.c2)",
+            "t1 (https://www.template-type-codes.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ACCESS-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SAMPLE-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SIMPLE-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c3, t1.c4"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.template-type-code.c2)",
+            "t1 (http://www.template-type-code.c2)",
+            "t1 (https://www.template-type_code.c2)",
+            "t1 (https://www.template-type.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template-types.c2)",
+            "t1 (http://www.template-type-codes.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ACCESS-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c5",
+            "select t1.c2, t1.c1",
+            "select t1.c2, t1.c4",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2, t1.c7",
+            "select t1.c2, t1.c9"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.template-type-code.c2)",
+            "t1 (http://www.template-type-code.c2)",
+            "t1 (https://www.template-type_code.c2)",
+            "t1 (https://www.template-type.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template-types.c2)",
+            "t1 (https://www.template-type-codes.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SAMPLE-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-UNION-SIMPLE-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING-IN-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "select t1.c2 SAMPLE-GROUP BY-HAVING",
+            "select t1.c2, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.template-type-code.c2)",
+            "t1 (https://www.template-type_code.c2)",
+            "t1 (http://www.template-type-code.c2)",
+            "t1 (https://www.template-type.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template-types.c2)",
+            "t1 (https://www.template-type-codes.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-PROGRAM-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2 (ref. t1.c3)",
+            "select t1.c2, t1.c5",
+            "select t1.c2, t1.c1",
+            "select t1.c2 (ref. t1.c1)"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.t1.c2)",
+            "t1 (http://www.t1.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template1.c2)",
+            "t1 (http://www.template1.c2)",
+            "t1 (http://www.template-t1.c2)",
+            "t1 (https://t1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c3, t1.c4",
+            "select t1.c1, t1.c2",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2 (ref. t1.c3)",
+            "select t1.c2, t1.c5",
+            "select t1.c2, t1.c3, t1.c5"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.t1.c2)",
+            "t1 (http://www.t1.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://t1.c2)",
+            "t1 (https://www.template1.c2)",
+            "t1 (http://www.template-t1.c2)",
+            "t1 (http://www.template1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c3, t1.c4",
+            "select t1.c1, t1.c2",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2 (ref. t1.c3)",
+            "select t1.c2, t1.c3, t1.c5",
+            "select t1.c2, t1.c5"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.t1.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template1.c2)",
+            "t1 (http://www.t1.c2)",
+            "t1 (http://www.template-t1.c2)",
+            "t1 (http://www.template1.c2)",
+            "t1 (https://t1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c3, t1.c4",
+            "select t1.c1, t1.c2",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2 (ref. t1.c3)",
+            "select t1.c2, t1.c5",
+            "select t1.c2, t1.c3, t1.c5"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.t1.c2)",
+            "t1 (https://www.template1.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (http://www.t1.c2)",
+            "t1 (http://www.template1.c2)",
+            "t1 (http://www.template-t1.c2)",
+            "t1 (https://t1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c2",
+        "topk_preds": [
+            "select t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c2, t1.c3, t1.c4",
+            "select t1.c1, t1.c2",
+            "select t1.c2 (or t1.c3)",
+            "select t1.c2 (ref. t1.c3)",
+            "select t1.c2, t1.c5",
+            "select t1.c2, t1.c3, t1.c5"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (https://www.t1.c2)",
+            "t1 (http://www.t1.c2)",
+            "t1 (http://www.template-type.c2)",
+            "t1 (https://www.template1.c2)",
+            "t1 (https://t1.c2)",
+            "t1 (http://www.template-t1.c2)",
+            "t1 (http://www.template1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t3.c1, t3.c2",
+            "select t3.c1 (t3.c0)",
+            "select t3.c1, t3.c3",
+            "select t3.c1,",
+            "select t3.c1 (t3.c2)",
+            "select t3.c1",
+            "select t3.c1 - t3.c2"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t3 (https://t3.c1)",
+            "t3 (http://www.t3.c1)",
+            "t3 (https://www.t3.c1)",
+            "t3 (http://t3.c1)",
+            "t3 (http://parallel.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUPS-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNIon-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t2.c0",
+            "select t3.c1, t3.c2",
+            "select t3.c1, t2.c2",
+            "select t2.c0, t3.c1",
+            "select t3.c1, t2.c0",
+            "select t2.c0, t2.c1",
+            "select t2.c0, t2.c2"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t1 t2 t3",
+            "t5 t6 t7",
+            "t5 t6 t3",
+            "t5 t6 t8",
+            "t3 t2 t3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING-"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t3.c1, t3.c2",
+            "select t3.c1, t3.c2, t3.c3",
+            "select t3.c1, t3.c2, max(t3.c1)",
+            "select t3.c1, t3.c2, t3.c4",
+            "select t3.c1 (t3.c0)",
+            "select t3.c1, t3.c3",
+            "select t3.c1, t3.c2, t3.c1"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t3 (https://t3.c1)",
+            "t1 t3",
+            "t3 (http://t3.c1)",
+            "t3 (https://www.t3.c1)",
+            "t3 (http://www.t3.c1)",
+            "t3 (https://t3.c1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t3.c1, t3.c2",
+            "select t3.c1, t3.c2, t3.c3",
+            "select t3.c1, t3.c2, max(t3.c1)",
+            "select t3.c1, t3.c2, min(t3.c1)",
+            "select t3.c1, t3.c2, t3.c4",
+            "select t3.c1, t3.c2 ou t3.c3",
+            "select t3.c1, t3.c3"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t3 (http://t3.c1)",
+            "t3 (http://www.t3.c1)",
+            "t3 (http://t3.c1.c1)",
+            "t3 (http://t3.c1",
+            "t3 (http://www.t3.c1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t3.c1, t3.c2",
+            "select t3.c1, t3.c2, t3.c3",
+            "select t3.c1, t3.c2, max(t3.c1)",
+            "select t3.c1, t3.c2, t3.c4",
+            "select t3.c1, t3.c3",
+            "select t3.c1 (t3.c0)",
+            "select t3.c1, t3.c2, t3.c1"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t3 (https://t3.c1)",
+            "t1 t3",
+            "t3 (https://www.t3.c1)",
+            "t3 (http://t3.c1)",
+            "t3 (http://www.t3.c1)",
+            "t3 (https://t3.c1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t3.c1, t3.c2",
+            "select t3.c1, t3.c2, t3.c3",
+            "select t3.c1, t3.c2, max(t3.c1)",
+            "select t3.c1, t3.c2, t3.c4",
+            "select t3.c1, t3.c2 ou t3.c3",
+            "select t3.c1, t3.c3",
+            "select t3.c1 (t3.c0)"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t3 (https://t3.c1)",
+            "t3 (http://t3.c1)",
+            "t1 t3",
+            "t3 (https://www.t3.c1)",
+            "t3 (http://www.t3.c1)",
+            "t3 (https://t3.c1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t3.c1, t3.c2",
+            "select t3.c1, t3.c2, t3.c3",
+            "select t3.c1, t3.c2, max(t3.c1)",
+            "select t3.c1, t3.c2, t3.c4",
+            "select t3.c1 (t3.c0)",
+            "select t3.c1, t3.c2 ou t3.c3",
+            "select t3.c1, t3.c3"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t3 (https://t3.c1)",
+            "t3 (https://www.t3.c1)",
+            "t3 (http://t3.c1)",
+            "t3 (http://www.t3.c1)",
+            "t3 (https://t3.c1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING -UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING-"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t2.c0",
+            "select t3.c1",
+            "select t4.c1",
+            "select t3.c0",
+            "select t5.c1",
+            "select t1.c1",
+            "select t3.c1,"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t5 t2 t3",
+            "t1 - t3",
+            "t2 t3 (http://www.t3.c1)",
+            "t2 t3 (https://www.t3.c1)",
+            "t2 t3 (https://t3.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING -UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-BIG-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t2.c0",
+            "select t3.c1",
+            "select t4.c1",
+            "select t3.c0",
+            "select t1.c1",
+            "select t5.c1",
+            "select t3.c1,"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t1 - t3",
+            "t5 t6 t7",
+            "t5 t6 t3",
+            "t5 t6 t8",
+            "t5 t6 t11"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING -UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-BIG-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t2.c0",
+            "select t3.c1",
+            "select t4.c1",
+            "select t5.c1",
+            "select t3.c0",
+            "select t1.c1",
+            "select t3.c1,"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t1 - t3",
+            "t6 t8",
+            "t1 - t6",
+            "t1-t3",
+            "t5 t6 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING -UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t2.c0",
+            "select t3.c1",
+            "select t4.c1",
+            "select t3.c0",
+            "select t1.c1",
+            "select t5.c1",
+            "select t3.c1,"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t5 t6 t3",
+            "t5 t6 t7",
+            "t5 t6 t8",
+            "t1 - t3",
+            "t5 t7 t3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING -UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-BIG-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t3.c1",
+        "topk_preds": [
+            "select t3.c1",
+            "select t2.c0",
+            "select t3.c1",
+            "select t4.c1",
+            "select t3.c0",
+            "select t1.c1",
+            "select t5.c1",
+            "select t3.c1,"
+        ]
+    },
+    {
+        "structure": "t3",
+        "topk_preds": [
+            "t3",
+            "t2 t3",
+            "t1 t3",
+            "t5 t6 t3",
+            "t5 t6 t7",
+            "t1 - t3",
+            "t5 t6 t8",
+            "t5 t6 t9"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c18"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (tourney-level, t1.c20",
+            "t1 (tourney-level, t1.c20)",
+            "t1 (http://t1.c20",
+            "t1 (tourney-level)",
+            "t1 (tourney-level, t1.c20 )",
+            "t1 (http://t1.c20)",
+            "t1 (tourney_name)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING INPUT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c20",
+            "t1 (http://t1.c20)",
+            "t1 (tourney-name)",
+            "t1 (tourney-c20)",
+            "t1 (tourney-level)",
+            "t1 (tourney-c20",
+            "t1 (tourney_name)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING INPUT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c20",
+            "t1 (http://t1.c20)",
+            "t1 (tourney-name)",
+            "t1 (tourney-c20)",
+            "t1 (tourney-level)",
+            "t1 (tourney_name)",
+            "t1 (tourney-c20"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING INPUT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c20",
+            "t1 (t1.c20)",
+            "t1 (http://t1.c20)",
+            "t1 (tourney-c20)",
+            "t1 (tourney-name)",
+            "t1 (tourney_name)",
+            "t1 t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c20",
+            "t1 (tourney_name)",
+            "t1 (tourney-c20)",
+            "t1 (http://t1.c20)",
+            "t1 (tourney-name)",
+            "t1 (tourney-level)",
+            "t1 (tourney t1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING -UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c18",
+            "select t1.c20, t1.c20"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (tournaments with more than 19 matches)",
+            "t1 (tourneys with more than 19 matches)",
+            "t1 (tournaments with more than 19 matches",
+            "t1 (tournaments with t1.c20",
+            "t1 (tourneys with more than 19 matches",
+            "t1 (tournaments with t1.c20)",
+            "t1 (tournaments with over 19 matches)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING INPUT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (tournaments with a t1.c20",
+            "t1 (tournaments with more than 4 matches)",
+            "t1 (tournaments with a t1.c20)",
+            "t1 (tournaments with t1.c20",
+            "t1 (tournaments with t1.c20)",
+            "t1 (tourneys with more than 4 matches)",
+            "t1 (tournaments with more than four matches)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ISO-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING-"
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (tournaments with more than 8 matches)",
+            "t1 (tourneys with more than 8 matches)",
+            "t1 (tournaments with t1.c20",
+            "t1 (tournaments with t1.c20)",
+            "t1 (tourneys with t1.c20",
+            "t1 (tourneys with t1.c20)",
+            "t1 (tourneys with more than 8 matches"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING INPUT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (tourneys with more than 6 matches)",
+            "t1 (tourneys containing more than 6 matches)",
+            "t1 (tourneys with t1.c20",
+            "t1 (tourneys with t1.c20)",
+            "t1 (tourneys with more than 6 matches",
+            "t1 (tourneys containing more than 6 matches",
+            "t1 (tourneys with more than six matches)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ISO-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BYHAVING"
+        ]
+    },
+    {
+        "structure": "select t1.c20",
+        "topk_preds": [
+            "select t1.c20",
+            "select t1.c20, t1.c17",
+            "select t1.c20, t1.c23",
+            "select t1.c20, t1.c21",
+            "select t1.c20, t1.c22",
+            "select t1.c20, t1.c13",
+            "select t1.c20, t1.c20",
+            "select t1.c20, t1.c19"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (tourneys with more than 14 matches)",
+            "t1 (tournaments with more than 14 matches)",
+            "t1 (tourneys containing more than 14 matches)",
+            "t1 (tourneys with more than 14 matches",
+            "t1 (tournaments with more than 14 matches",
+            "t1 (tournaments with t1.c20",
+            "t1 (tournaments with t1.c20)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, count(*)",
+            "select t0.c5, max(t0.c6)",
+            "select t0.c5, max(t0.c0)",
+            "select t0.c5, t0.c2",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c7"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 (wta.c5)",
+            "t0 (wta_1.c5)",
+            "t0 t1",
+            "t0 (ta_count(*)",
+            "t0 (ta_1.c5)",
+            "t0 (ta_countries)",
+            "t0 (wta_1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, count(*)",
+            "select t0.c5, t0.c6",
+            "select t0.c5, max(t0.c4)",
+            "select t0.c5, max(t0.c0)",
+            "select t0.c5, t0.c4",
+            "select t0.c5, t0.c3",
+            "select t0.c5, t0.c1"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t",
+            "t0.c5",
+            "t0 t4",
+            "t0 (t0",
+            "t0 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, count(*)",
+            "select t0.c5, max(t0.c0)",
+            "select t0.c5, max(t0.c6)",
+            "select t0.c5, t0.c4",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c2"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t7",
+            "t0 (t0",
+            "t0.c5",
+            "t0 t",
+            "t0 (c5)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, count(*)",
+            "select t0.c5, max(t0.c0)",
+            "select t0.c5, max(t0.c4)",
+            "select t0.c5, max(t0.c6)",
+            "select t0.c5, t0.c4",
+            "select t0.c5, max(t0.c8)"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t",
+            "t0 t7",
+            "t0 (t0",
+            "t0.c5",
+            "t0 (c5)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, count(*)",
+            "select t0.c5, max(t0.c6)",
+            "select t0.c5, max(t0.c4)",
+            "select t0.c5, t0.c4",
+            "select t0.c5, max(t0.c0)",
+            "select t0.c5, t0.c1"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t",
+            "t0 (t0",
+            "t0.c5",
+            "t0 t11",
+            "t0 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING INPUT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, max(t0.c6)",
+            "select t0.c5, t0.c7",
+            "select t0.c5, t0.c4",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c2",
+            "select t0.c5, t0.c3"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 (ta_1.c5)",
+            "t0 (ta.c5)",
+            "t0 (ta_count(*)",
+            "t0 (ta_countries)",
+            "t0 (t0.c5)",
+            "t0 t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, max(t0.c4)",
+            "select t0.c5, t0.c4",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c3",
+            "select t0.c5, t0.c7",
+            "select t0.c5, t0.c2"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t",
+            "t0 t4",
+            "t0 (t0",
+            "t0 (c5)",
+            "t0 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING In-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, t0.c4",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c2",
+            "select t0.c5, t0.c3",
+            "select t0.c5, t0.c7",
+            "select t0.c5, t0.c16"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 (t0.c5)",
+            "t0 t1",
+            "t0 t2",
+            "t0 t7",
+            "t0 t1 t2",
+            "t0 (t0-c5)",
+            "t0 (t0"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING In-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, t0.c4",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c2",
+            "select t0.c5, t0.c7",
+            "select t0.c5, t0.c3",
+            "select t0.c5, max(t0.c6)"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t",
+            "t0 t7",
+            "t0 (t0",
+            "t0 (c5)",
+            "t0 -"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING In-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c5",
+        "topk_preds": [
+            "select t0.c5",
+            "select t0.c5, t0.c6",
+            "select t0.c5, t0.c4",
+            "select t0.c5, max(t0.c6)",
+            "select t0.c5, t0.c1",
+            "select t0.c5, t0.c2",
+            "select t0.c5, t0.c3",
+            "select t0.c5, t0.c7"
+        ]
+    },
+    {
+        "structure": "t0",
+        "topk_preds": [
+            "t0",
+            "t0 t1",
+            "t0 t2",
+            "t0 t",
+            "t0 (t0",
+            "t0 (c5)",
+            "t0 t11",
+            "t0 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c26, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (c21-t1.c27, t1.c28",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (c21 - t1.c27 - t1.c28 )",
+            "t1 (t1).c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c26, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t13.c27, t1.c28",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (c21 - t27 - t28",
+            "t1 (c21-c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c26, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (c21-c27, t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28 )",
+            "t1 (t1).c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c26, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (c21 - t27 - t28",
+            "t1 (t1.c27, t1.c28",
+            "t1 (t1).c27, t1.c28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (c21 - t27 - t28)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c26, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (c21 - t27 - t28",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (t1).c27, t1.c28",
+            "t1 (c21-c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t2.c27, t1.c28",
+            "select t1.c26, t1.c28"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t27 - t28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (t1).c27, t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28 )"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t2.c27, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t13.c27, t1.c28",
+            "t1 (t1.c27, t1.c28",
+            "t1 (t1).c27, t1.c28",
+            "t1 (c21 - t27 - t28",
+            "t1 (c21 - t1.c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t1.c26, t1.c28",
+            "select t2.c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t1.c27, t1.c28",
+            "t1 (c21 - t27 - t28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (t1).c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c 27, t1.c28",
+            "select t1.c77, t1.c28",
+            "select t1.c26, t1.c27",
+            "select t2.c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t27 - t28",
+            "t1 (t1).c27, t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t27 - t28)",
+            "t1 (c21 - t1 - t2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-WHERE",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select distinct t1.c27, t1.c28",
+        "topk_preds": [
+            "select t1.c27, t1.c28",
+            "select t1.c7, t1.c28",
+            "select t1.c2, t1.c28",
+            "select t1.c 27, t1.c28",
+            "select t1.c28, t1.c27",
+            "select t1.c77, t1.c28",
+            "select t2.c27, t1.c28",
+            "select t1.c27, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (c21 - t1.c27 - t1.c28",
+            "t1 (c21 - t1.c27 - t1.c28)",
+            "t1 (t1.c27, t1.c28",
+            "t1 (c21 - t27 - t28",
+            "t1 (t1).c27, t1.c28",
+            "t1 (c21 - t1 - t2)",
+            "t1 (c21-c27, t1.c28"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-C3, t6.c4, t6.c5, t6.c0",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c3, t6.c4, t6.c5, t6.c0",
+        "topk_preds": [
+            "select t6.c3, t6.c4, t6.c5, t6.c0",
+            "select t6.c3, t6.c4, t6.c5",
+            "select t6.c3, t6.c4, t6.c5 and t6.c0",
+            "select t6.c3.c3, t6.c4, t6.c5, t6.c0",
+            "select t6.c0, t6.c3, t6.c4, t6.c5",
+            "select t6.c3, t6.c4, t6.c5, t6.c0",
+            "select t6.c1, t6.c4, t6.c5, t6.c0",
+            "select t6.c3, t6.c4, t6.c5, t6.c1"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t3 t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t1 t6 t7",
+            "t6 t8",
+            "t3 t6 t8",
+            "t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-C3, t6.c4, t6.c5, t6.c0",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c3, t6.c4, t6.c5, t6.c0",
+        "topk_preds": [
+            "select t6.c3, t6.c4, t6.c5, t6.c0",
+            "select t6.c3, t6.c4, t6.c5",
+            "select t6.c3, t6.c4, t6.c5, t6.c0",
+            "select t6.c3, t6.c4, t6.c5 ainsi, t6.c0",
+            "select t6.c3, t6.c4, t6.c5 plus t6.c0",
+            "select t6.c0, t6.c3, t6.c4, t6.c5",
+            "select t6.c3, t6.c4, t6.c5 as well as t6.c0",
+            "select t6.c3, t6.c4, t6.c5 + t6.c0"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t3 t6",
+            "t6",
+            "t6 t7",
+            "t5 t6",
+            "t6 t8",
+            "t4 t6",
+            "t6 t15",
+            "t1 t6"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t9.c1, t10.c1",
+        "topk_preds": [
+            "select t8.c5, t8.c0",
+            "select t10.c5, t10.c0",
+            "select t12.c5, t12.c0",
+            "select t9.c5, t9.c0",
+            "select t14.c5, t14.c0",
+            "select t14.c3, t14.c0",
+            "select t11.c3, t11.c4",
+            "select t12.c3, t12.c0"
+        ]
+    },
+    {
+        "structure": "t9 t10",
+        "topk_preds": [
+            "t9",
+            "t8",
+            "t10",
+            "t12 t13",
+            "t5 t8",
+            "t9 t10",
+            "t10 t13",
+            "t13 t14"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING In-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t9.c1, t10.c1",
+        "topk_preds": [
+            "select t10.c5, t10.c0",
+            "select t8.c5, t8.c0",
+            "select t12.c5, t12.c0",
+            "select t14.c5, t14.c0",
+            "select t14.c3, t14.c0",
+            "select t11.c3, t11.c4",
+            "select t14.c3, t14.c4",
+            "select t9.c5, t9.c0"
+        ]
+    },
+    {
+        "structure": "t9 t10",
+        "topk_preds": [
+            "t1 t8",
+            "t1 t9",
+            "t1 t7",
+            "t1",
+            "t1 t10",
+            "t1 t14",
+            "t5 t8",
+            "t1 t15"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c0, t1.c1, t1.c3",
+            "select t1.c1, t1.c3, t1.c2",
+            "select t1.c1.c1, t1.c3",
+            "select t1.c1, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t1.c1/, t1.c3",
+            "select t1.c 1, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c1), t1.c3",
+            "t1 (t1.c1), t1.c3",
+            "t1, t1.c1, t1.c3",
+            "t1 (http://t1.c1, t1.c3",
+            "t1, t2.c1, t1.c3",
+            "t1, t2.c1, t2.c3",
+            "t1 (c1), t1.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c0, t1.c1, t1.c3",
+            "select t1.c1, t1.c3, t1.c2",
+            "select t1.c1.c1, t1.c3",
+            "select t1.c1, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t1.c 1, t1.c3",
+            "select t1.c1, t1.c3, t1.c4"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c1), t1.c3",
+            "t1 (t1.c1), t1.c3",
+            "t1, t1.c1, t1.c3",
+            "t1 (http://t1.c1, t1.c3",
+            "t1, t2.c1, t1.c3",
+            "t1 [t1.c1, t1.c3",
+            "t1 (c1), t1.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c0, t1.c1, t1.c3",
+            "select t1.c1, t1.c3, t1.c2",
+            "select t1.c1.c1, t1.c3",
+            "select t1.c1, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t2.c1, t1.c3",
+            "select t1.c 1, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c1), t1.c3",
+            "t1 (t1.c1), t1.c3",
+            "t1, t1.c1, t1.c3",
+            "t1 (http://t1.c1, t1.c3",
+            "t1, t2.c1, t1.c3",
+            "t1, t2.c1, t2.c3",
+            "t1 (c1), t1.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c0, t1.c1, t1.c3",
+            "select t1.c1, t1.c3, t1.c2",
+            "select t1.c1.c1, t1.c3",
+            "select t1.c1, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t2.c1, t1.c3",
+            "select t1.c 1, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c1), t1.c3",
+            "t1 (t1.c1), t1.c3",
+            "t1, t1.c1, t1.c3",
+            "t1 (http://t1.c1, t1.c3",
+            "t1, t2.c1, t1.c3",
+            "t1, t2.c1, t2.c3",
+            "t1 (c1), t1.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c0, t1.c1, t1.c3",
+            "select t1.c1, t1.c3, t1.c2",
+            "select t1.c1.c1, t1.c3",
+            "select t1.c1, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t1.c1/, t1.c3",
+            "select t1.c 1, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c1), t1.c3",
+            "t1 (t1.c1), t1.c3",
+            "t1, t1.c1, t1.c3",
+            "t1 (http://t1.c1, t1.c3",
+            "t1, t2.c1, t1.c3",
+            "t1 [t1.c1, t1.c3",
+            "t1, t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c3, t1.c2",
+            "select 5 t1.c1, t1.c3",
+            "select t1.c2, t1.c3",
+            "select t1.c3, t1.c4",
+            "select t1.c0, t1.c3",
+            "select t1.c1, t1.c3.c3",
+            "select t1.c1, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c3, t1.c2",
+            "t1 (http://t1.c3, t1.c4",
+            "t1 (t1.c1, t1.c3)",
+            "t1 (http://t1.c3, t2.c4)",
+            "t1 (t1.c1), t1.c3",
+            "t1 (http://t1.c3, t1.c4)",
+            "t1 (http://t1.c3, t1.c2)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c3, t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c3, t1.c4",
+            "select t1.c0, t1.c3",
+            "select t1.c1, t1.c2",
+            "select t1.c1, sum(t1.c3)",
+            "select t1.c1, t1.c3.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c3, t1.c2",
+            "t1 (http://t1.c3, t1.c4",
+            "t1 (t1.c1, t1.c3)",
+            "t1 (http://t1.c3, t2.c4)",
+            "t1 (http://t1.c3, t1.c2)",
+            "t1 (http://t1.c3, t1.c4)",
+            "t1 (t1.c1, t1.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c3, t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c3, t1.c4",
+            "select t1.c0, t1.c3",
+            "select t1.c1, t1.c3.c3",
+            "select t1.c1, t1.c2",
+            "select t1.c4, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (t1.c1, t1.c3)",
+            "t1 (t1.c2), t1.c3",
+            "t1 (t1.c1), t1.c3",
+            "t1 (t1.c1, t1.c3",
+            "t1 (t1.c1) & t1.c3",
+            "t1 (t1.c1) t2.c2",
+            "t1 (t1.c1) t2.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c3, t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c3, t1.c4",
+            "select t1.c0, t1.c3",
+            "select t1.c1, t1.c3.c3",
+            "select t1.c1, t1.c2",
+            "select t2.c1, t1.c3"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 [t1.c1, t1.c3",
+            "t1 [t1.c1, t1.c3)",
+            "t1 [t1.c3, t1.c2",
+            "t1 (http://t1.c3, t1.c2",
+            "t1 [t1.c3, t1.c4",
+            "t1 (http://t1.c3, t1.c4",
+            "t1 [t1.c1, t1.c3]"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-WHERE"
+        ]
+    },
+    {
+        "structure": "select t1.c1, t1.c3",
+        "topk_preds": [
+            "select t1.c1, t1.c3",
+            "select t1.c3, t1.c2",
+            "select t1.c2, t1.c3",
+            "select t1.c3, t1.c4",
+            "select t1.c0, t1.c3",
+            "select t1.c1, t1.c3.c3",
+            "select 7 t1.c1, t1.c3",
+            "select t1.c1, t1.c2"
+        ]
+    },
+    {
+        "structure": "t1",
+        "topk_preds": [
+            "t1",
+            "t1 (http://t1.c3, t1.c2",
+            "t1 (http://t1.c3, t1.c4",
+            "t1 (t1.c1, t1.c3)",
+            "t1 (http://t1.c3, t2.c4)",
+            "t1 (http://t1.c3, t1.c2)",
+            "t1 (t1.c1, t1.c3",
+            "t1 (t1.c1), t1.c3"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSERT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select count(t3.c1), t2.c1",
+        "topk_preds": [
+            "select t2.c1, count(distinct t3.c1)",
+            "select t2.c1, count(t3.c1)",
+            "select t2.c1, count(*)",
+            "select t2.c1, count(distinct t2.c1)",
+            "select t2.c1, count(count(distinct t3.c1)",
+            "select t2.c1, t3.c1",
+            "select t2.c1, count(distinct t3.c2)",
+            "select t2.c1, count(distinct t3.c1 )"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 (c0, count(distinct t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display/t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display_t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display.c1)",
+            "t2 t3 (http://t3.c1, t2.c1)",
+            "t2 t3 (http://en.wikipedia.org/display-t3.c1)",
+            "t2 t3 (http://www.t3.c1, t2.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(t3.c1), t2.c1",
+        "topk_preds": [
+            "select t2.c1, count(distinct t3.c1)",
+            "select t2.c1, count(t3.c1)",
+            "select t2.c1, count(*)",
+            "select t2.c1, count(distinct t2.c1)",
+            "select t2.c1, t3.c1",
+            "select t2.c1, count(count(distinct t3.c1)",
+            "select t2.c1, t2.c1",
+            "select t2.c1, count(distinct t3.c2)"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 (http://en.wikipedia.org/display/t3.c1)",
+            "t2 t3 (c0, count(distinct t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display.c1)",
+            "t2 t3 (http://en.wikipedia.org/display_t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display-t3.c1)",
+            "t2 t3 (http://t3.c1, t2.c1)",
+            "t2 t3 (http://www.t3.c1, t2.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(t3.c1), t2.c1",
+        "topk_preds": [
+            "select t2.c1, count(distinct t3.c1)",
+            "select t2.c1, count(t3.c1)",
+            "select t2.c1, count(*)",
+            "select t2.c1, t3.c1",
+            "select t2.c1, count(distinct t2.c1)",
+            "select t2.c1, count(count(distinct t3.c1)",
+            "select t2.c1, t2.c1",
+            "select t2.c1, count(distinct t3.c2)"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 (c0, count(distinct t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display/t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display_t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display.c1)",
+            "t2 t3 (http://en.wikipedia.org/display-t3.c1)",
+            "t2 t3 (http://t3.c1, t2.c1)",
+            "t2 t3 (http://www.t3.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-ORDER BY"
+        ]
+    },
+    {
+        "structure": "select count(t3.c1), t2.c1",
+        "topk_preds": [
+            "select t2.c1, count(distinct t3.c1)",
+            "select t2.c1, count(t3.c1)",
+            "select t2.c1, count(*)",
+            "select t2.c1, t3.c1",
+            "select t2.c1, count(distinct t2.c1)",
+            "select t2.c1, count(count(distinct t3.c1)",
+            "select t2.c1, t2.c1",
+            "select t2.c1, count(distinct t3.c2)"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 (c0, count(distinct t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display/t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display_t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display.c1)",
+            "t2 t3 (http://t3.c1, t2.c1)",
+            "t2 t3 (http://en.wikipedia.org/display-t3.c1)",
+            "t2 t3 (http://www.t3.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSECT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select count(t3.c1), t2.c1",
+        "topk_preds": [
+            "select t2.c1, count(distinct t3.c1)",
+            "select t2.c1, count(t3.c1)",
+            "select t2.c1, count(*)",
+            "select t2.c1, t3.c1",
+            "select t2.c1, count(distinct t2.c1)",
+            "select t2.c1, count(count(distinct t3.c1)",
+            "select t2.c1, t2.c1",
+            "select t2.c1, count(distinct t3.c2)"
+        ]
+    },
+    {
+        "structure": "t2 t3",
+        "topk_preds": [
+            "t2 t3",
+            "t2 t3 (c0, count(distinct t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display/t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display_t3.c1)",
+            "t2 t3 (http://en.wikipedia.org/display.c1)",
+            "t2 t3 (http://en.wikipedia.org/display-t3.c1)",
+            "t2 t3 (http://t3.c1, t2.c1)",
+            "t2 t3 (http://www.t3.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4,",
+            "select t2.c1, t2.c2",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c4.",
+            "select t2.c1, t2.c6"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (http://www.t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1), t2(c4)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4,",
+            "select t2.c1, t2.c2",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c4.",
+            "select t2.c1, t2.c6"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (http://www.t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1), t2(c4)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4,",
+            "select t2.c1, t2.c2",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c4.",
+            "select t2.c1, t2.c6"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (http://www.t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1), t2(c4)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4,",
+            "select t2.c1, t2.c2",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c4.",
+            "select t2.c1, t2.c6"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1, t2.c4",
+            "t2 (http://t2.c1), t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1), t2(c4)",
+            "t2 (c1), t2 (c4)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c2",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4,",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c4.",
+            "select t2.c1, t2.c6"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (http://www.t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1), t2(c4)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c4, t2.c0",
+            "select t2.c1, t2.c4, t2.c3",
+            "select t2.c1, t2.c4, t2.c5",
+            "select t2.c1, t2.c4, t2.c6",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4",
+            "t2 (http://www.t2.c1), t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c4, t2.c0",
+            "select t2.c1, t2.c4, t2.c3",
+            "select t2.c1, t2.c4, t2.c5",
+            "select t2.c1, t2.c4, t2.c6",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1, t2.c4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c4, t2.c0",
+            "select t2.c1, t2.c4, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4, t2.c5",
+            "select t2.c1, t2.c4, t2.c6",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1, t2.c4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c4, t2.c0",
+            "select t2.c1, t2.c4, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4, t2.c5",
+            "select t2.c1, t2.c4, t2.c6",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4",
+            "t2 (http://www.t2.c1), t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1), t2.c4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1, t2.c4",
+        "topk_preds": [
+            "select t2.c1, t2.c4",
+            "select t2.c1, t2.c4, t2.c0",
+            "select t2.c1, t2.c4, t2.c3",
+            "select t2.c1, t2.c4)",
+            "select t2.c1, t2.c4, t2.c5",
+            "select t2.c1, t2.c4, t2.c6",
+            "select t2.c1, t2.c4\"",
+            "select t2.c1, t2.c2"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://t2.c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4",
+            "t2.c1, t2.c4",
+            "t2 (t2.c1), t2.c4",
+            "t2 (c1), t2.c4",
+            "t2 (http://t2.c1, t2.c4)",
+            "t2 (c1, t2.c4"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-top-order by-cut)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-top-order by-cut-off",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-top-orderby-c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-top-order by-LIMIT"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-THREE-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-THREE-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c14"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-lie-fac1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c6"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order by-LIMIT)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order BY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order by-ceiling",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-orderby-c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT (GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-scenic-order-by--LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-scenic-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-selected-order by-LIMIT)",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-scenic-order by-LIMIT)",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-scenic-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-scenic-order-by-LIMIT"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c14"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-lie-fac1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-order-by--LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-lie-favorites)",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-lie-favorites"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c0",
+            "select t2.c1 (or t2.c13)",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-fac1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-by-neighbourhood)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-by-neighbourhood",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-by-com-t2.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c3",
+            "select t2.c1, t2.c14"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBy-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry)",
+            "t2 (http://en.wikipedia.org/cite-for-t2.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry t2.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry/ t2.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderBy-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-schema.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-GROUP BY-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-fac1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBy-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-by--c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c14",
+            "select t2.c1 (t2.c10)",
+            "select t2.c1, t2.c9"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-down-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-down-order by-LIMIT)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-down-ordered by-c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-lie-down-order by-cut-off",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c9"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order by-LIMIT)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-order BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c9"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c9"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-neighbourhood)",
+            "t2 (http://en.wikipedia.org/cite-schema.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c9"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://www.t2.c1)",
+            "t2 (http://t2.c1)",
+            "t2 (http://t2.c1, t2.c10",
+            "t2 (http://www.t2.c1, t2.c10",
+            "t2 (http://t2.c1, t2.c13)",
+            "t2 (http://www.t2.c1, t2.c13",
+            "t2 (http://www.t2.c1, t2.c13)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order BY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-comment)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-comment",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-THREE-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://www.t2.c1)",
+            "t2 (http://t2.c1)",
+            "t2 [http://www.t2.c1)",
+            "t2 [http://www.t2.c1",
+            "t2 [http://t2.c1)",
+            "t2 [http://t2.c1",
+            "t2 (https://t2.c1)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-UNION-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT.",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderBY-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderBy-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-schema.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-ORDER BY-LIMIT",
+        "topk_preds": [
+            "SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT (SELECT-FROM-ORDER BY-LIMIT)",
+            "SELECT-FROM-ORDER BY-LIMIT-GROUP BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT, SELECT-FROM-ORDER BY-LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY - LIMIT",
+            "SELECT-FROM-ORDER BY-LIMIT-INTERSECT-SELECT-FROM-ORDER BY-LIMIT."
+        ]
+    },
+    {
+        "structure": "select t2.c1",
+        "topk_preds": [
+            "select t2.c1",
+            "select t2.c1, t2.c13",
+            "select t2.c1, t2.c6",
+            "select t2.c1, t2.c0",
+            "select t2.c1, t2.c12",
+            "select t2.c1, t2.c10",
+            "select t2.c1, t2.c14",
+            "select t2.c1, t2.c3"
+        ]
+    },
+    {
+        "structure": "t2",
+        "topk_preds": [
+            "t2",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry",
+            "t2 (http://en.wikipedia.org/cite-for-order by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-ancestry.c1)",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-lie-fac1)",
+            "t2 (http://en.wikipedia.org/cite-for-order-by-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-orderby-LIMIT",
+            "t2 (http://en.wikipedia.org/cite-for-order by-LIMIT)"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GAGUE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GAGLE-GROUP BY-HAVING",
+            "SELECT-FROM-GROUPS-GROUP BY-HAVING",
+            "SELECT-FROM-GAGUE-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c1",
+        "topk_preds": [
+            "select t0.c1",
+            "select t0.c1, t1.c0",
+            "select t0.c1, t1.c1",
+            "select t0.c1, t1.c2",
+            "select t0.c1, t0.c2",
+            "select t0.c1 (or t0.c2)",
+            "select t0.c1 (t0.c0)",
+            "select t0.c1, t0.c0"
+        ]
+    },
+    {
+        "structure": "t0 t1",
+        "topk_preds": [
+            "t0 t1",
+            "t0 t1 (c0, t0 t1)",
+            "t0 t1 (c0, t0 t1",
+            "t0 t1 (c0, t0",
+            "t0 t1 (c0, t0)",
+            "t0 t1 (c0, t0.c1)",
+            "t0 t1 (c0, t0, t1)",
+            "t0 t1 (c0, t0, t1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM groups by-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNIon-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING - SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t0.c1",
+        "topk_preds": [
+            "select t0.c1",
+            "select t0.c1, t1.c0",
+            "select t0.c1, t1.c1",
+            "select t0.c1, t1.c2",
+            "select t0.c1, t0.c2",
+            "select t0.c1 (t0.c0)",
+            "select t0.c1 (or t0.c2)",
+            "select count(t0.c1)"
+        ]
+    },
+    {
+        "structure": "t0 t1",
+        "topk_preds": [
+            "t0 t1",
+            "t0 t1 (c0, t0 t1)",
+            "t0 t1 (c0, t0 t1",
+            "t0 t1 (c0, t0",
+            "t0 t1 (c0, t0)",
+            "t0 t1 (c0, t0, t1)",
+            "t0 t1 (c0, t0.c1)",
+            "t0 t1 (c0, t0, t1"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUPS-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY 3-HAVING",
+            "SELECT-FROM-WHERE-interACT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c1",
+        "topk_preds": [
+            "select t0.c1",
+            "select t0.c1, t0.c2",
+            "select t0.c1, t0.c0",
+            "select t0.c1 - t0.c2",
+            "select t0.c1, t0.c3",
+            "select t0.c1, t0.c5",
+            "select t0.c1, t0.c1",
+            "select t0.c1, t0.c6"
+        ]
+    },
+    {
+        "structure": "t0 t1",
+        "topk_preds": [
+            "t0 t1",
+            "t0 t1 t2",
+            "t0 t1 t3",
+            "t0 t1 and t2",
+            "t0 t1, t2",
+            "t0 t1 \"likes\"",
+            "t0 t1 2",
+            "t0 t1-t2"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-INTERSECT-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t0.c1",
+        "topk_preds": [
+            "select t0.c1",
+            "select t0.c1, t0.c2",
+            "select t0.c1, t0.c0",
+            "select t0.c1, t0.c3",
+            "select t0.c1, t1.c1",
+            "select t0.c1, t0.c1",
+            "select t0.c1 (t0.c2)",
+            "select t0.c1, t0.c5"
+        ]
+    },
+    {
+        "structure": "t0 t1",
+        "topk_preds": [
+            "t0 t1",
+            "t0 t1 t2",
+            "t0 t1 t3",
+            "t0 t1 and t2",
+            "t0 t1, t2",
+            "t0 t1-t2",
+            "t0 t1 t2.",
+            "t0 t1 t2,"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t6.c0, t6.c7, t6.c10."
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t3 t6 t7",
+            "t1 t6 t7",
+            "t6 t7 "
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE, SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t 6.c0, t6.c7, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t0 t6 t7",
+            "t3 t6 t7",
+            "t2 t6 t7",
+            "t6 t7 t11",
+            "t6 t8"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE, SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-6-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t6.c0, t6.c7, t6.c10."
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t3 t6 t7",
+            "t1 t6 t7",
+            "t6 t7 "
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-CALL-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t 6.c0, t6.c7, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t6 t8",
+            "t6 t7 t8"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE",
+            "SELECT-FROM-WHERE or-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t 6.c0, t6.c7, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t0 t6 t7",
+            "t3 t6 t7",
+            "t2 t6 t7",
+            "t1 t6 t7",
+            "t6 t7 t11"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t6.c0, t6.c7, t6.c10."
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t1 t6 t7",
+            "t6 t8"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE, SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t5.c0, t6.c7, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t6 t8",
+            "t6 t7 "
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t6.c0, t6.c7, t6.c10."
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t1 t6 t7",
+            "t6 t8"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-ACT-UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t6.c0, t6.c7, t6.c10."
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t1 t6 t7",
+            "t6 t8"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE or GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE-UNION-SELECT-FROM-GROUP BY-HAVING-",
+            "SELECT-FROM-WHERE-UNITED-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-WHERE/UNION-SELECT-FROM-GROUP BY-HAVING"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c7, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c7, t6.c10",
+            "select t6.c2, t6.c7, t6.c10",
+            "select t7.c2, t6.c7, t6.c10",
+            "select t6.c1, t6.c7, t6.c10",
+            "select t8.c2, t6.c7, t6.c10",
+            "select t1.c0, t6.c7, t6.c10",
+            "select t2.c0, t6.c7, t6.c10",
+            "select t5.c0, t6.c7, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t1 t6 t7",
+            "t6 t8"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING, SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c1, t6.c2",
+        "topk_preds": [
+            "select t6.c0, t6.c1, t6.c2",
+            "select t7.c2, t6.c1, t6.c2",
+            "select t6.c0, t6.c2, t6.c1",
+            "select t8.c2, t6.c1, t6.c2",
+            "select t6.c0, t6.c1, t6.c2",
+            "select t2.c0, t6.c1, t6.c2",
+            "select t1.c0, t6.c1, t6.c2",
+            "select t5.c0, t6.c1, t6.c2"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t1, t6, t7",
+            "t3 t6 t7",
+            "t4 t6 t7",
+            "t0 t6 t7",
+            "t1, t6 t7",
+            "t2 t6 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING, SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INSTALL-EXCEPT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING."
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c1, t6.c2",
+        "topk_preds": [
+            "select t6.c0, t6.c1, t6.c2",
+            "select t7.c2, t6.c1, t6.c2",
+            "select t8.c2, t6.c1, t6.c2",
+            "select t2.c0, t6.c1, t6.c2",
+            "select t1.c0, t6.c1, t6.c2",
+            "select t2.c2, t6.c1, t6.c2",
+            "select t6.c0, t6.c2, t6.c1",
+            "select t7.c2, t6.c1, t6.c2"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t1, t6, t7",
+            "t2, t6, t7",
+            "t4 t6 t7",
+            "t3 t6 t7",
+            "t1, t6 t7",
+            "t0 t6 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUPS-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c10",
+            "select t7.c2, t6.c10",
+            "select t6.c2, t6.c10",
+            "select t6.c1, t6.c10",
+            "select t2.c2, t6.c10",
+            "select t8.c2, t6.c10",
+            "select t1.c0, t6.c10",
+            "select t 6.c0, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t3 t6 t7",
+            "t4 t6 t7",
+            "t1 t6 t7",
+            "t0 t6 t7",
+            "t2 t7",
+            "t 6 t7"
+        ]
+    },
+    {
+        "structure": "SELECT-FROM-GROUP BY-HAVING",
+        "topk_preds": [
+            "SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-INTERSECT-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING.",
+            "SELECT-FROM-GROUP BY-HAVING-UNIon-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUPS-GROUP BY-HAVING-UNION-SELECT-FROM-GROUP BY-HAVING",
+            "SELECT-FROM-GROUP BY-HAVING-ORDER BY-LIMIT"
+        ]
+    },
+    {
+        "structure": "select t6.c0, t6.c10",
+        "topk_preds": [
+            "select t6.c0, t6.c10",
+            "select t6.c2, t6.c10",
+            "select t7.c2, t6.c10",
+            "select t6.c1, t6.c10",
+            "select t2.c2, t6.c10",
+            "select t8.c2, t6.c10",
+            "select t6.c02, t6.c10",
+            "select t1.c2, t6.c10"
+        ]
+    },
+    {
+        "structure": "t6 t7",
+        "topk_preds": [
+            "t6 t7",
+            "t5 t6 t7",
+            "t3 t6 t7",
+            "t4 t6 t7",
+            "t1 t6 t7",
+            "t0 t6 t7",
+            "t2 t6 t7",
+            "t2 t7"
+        ]
+    }
+]
