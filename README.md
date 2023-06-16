@@ -28,7 +28,7 @@ mkdir experimental_outputs/train/aligner
 ## :zap: Quick Start
 
 ### Download models
-- [Prompt Generator](https://drive.google.com/drive/folders/1rkHvECBv7zO58q6_kNSFvfEHeRJGZiP1?usp=sharing): Put it under `experimental_outputs/train/template_generator`.
+- [Template Generator](https://drive.google.com/drive/folders/1rkHvECBv7zO58q6_kNSFvfEHeRJGZiP1?usp=sharing): Put it under `experimental_outputs/train/template_generator`.
 - [Aligner](https://drive.google.com/file/d/1IvvyYo_S2muVr4HyxHyhZifFlIRlPToD/view?usp=share_link): Put it under `experimental_outputs/train/aligner`.
 
 ### Text-to-SQL inference
@@ -47,7 +47,6 @@ Note that we evaluate the text-to-SQL results using the [test_suite_evaluation](
 
 ### Train template generator
 
-
 ```sh
 CUDA_VISIBLE_DEVICES={gpu_id} bash -c "python src/run.py configs/train_template_generator.json"
 ```
@@ -62,4 +61,14 @@ The best model will be saved at `experimental_outputs/train/aligner/checkpoint_b
 
 ## :speech_balloon:Citation
 
-## :round_pushpin: Acknowledgement
+If our code is helpful to you, please cite our work:
+```sh
+@misc{gu2023interleaving,
+      title={Interleaving Pre-Trained Language Models and Large Language Models for Zero-Shot NL2SQL Generation}, 
+      author={Zihui Gu and Ju Fan and Nan Tang and Songyue Zhang and Yuxin Zhang and Zui Chen and Lei Cao and Guoliang Li and Sam Madden and Xiaoyong Du},
+      year={2023},
+      eprint={2306.08891},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
