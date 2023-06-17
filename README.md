@@ -1,4 +1,7 @@
 # LLM_NL2SQL
+## :thought_balloon: Introduction
+This repository contains the code for the paper [``Interleaving Pre-Trained Language Models and Large Language Models for Zero-Shot NL2SQL Generation''](https://arxiv.org/abs/2306.08891).
+
 ## :open_file_folder: Data Preparation
 ### Train data
 - [Spider](https://drive.google.com/uc?export=download&id=1_AckYkinAnhqmRQtGsQgUKAnTHxxX5J0): Put it under `src/datasets/spider`.
@@ -19,7 +22,7 @@ Please refer to `requirements.txt` to download the relevant toolkits.
 
 Prepare the following folders:
 ```sh
-cd LLM_NL2SQL
+cd ZeroNL2SQL
 mkdir logs
 mkdir experimental_outputs/train/template_generator
 mkdir experimental_outputs/train/aligner
