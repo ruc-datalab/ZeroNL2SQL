@@ -85,7 +85,7 @@ if __name__ == "__main__":
     openai.api_key = args.key
     if args.test_set_name == "kaggledbqa":
         input_path = "data/kaggledbqa/test_with_template.json"
-        db = "data/kaggledbqa/databases"
+        db_path = "data/kaggledbqa/databases"
         output_path = f"data/kaggledbqa/prediction.json"
     elif args.test_set_name[:2] == "DB":
         input_path = f"data/drspider/{args.test_set_name}/questions_post_perturbation.json"
@@ -111,6 +111,7 @@ if __name__ == "__main__":
         print(f'begin={begin}')
         for item in tqdm(test_data[begin:]):
             db_id = item['db_id']
+            db = os.path.join(db_path, db_id, db_id + '.sqlite')
             message_tracks = []
             for candidate_table_list in item["pred_table_list"]:
                 # table schema
@@ -140,7 +141,7 @@ if __name__ == "__main__":
                         messages=message_tracks[track_id]["messages"],
                     )
                     output = LLM_return.choices[0].message['content']
-                    message_tracks[track_id]["messages"].append({"role": "system", "content": LLM_return})
+                    message_tracks[track_id]["messages"].append({"role": "system", "content": output})
                     token_cnt[0] += LLM_return["usage"]["total_tokens"]
                     # extract SQL from the return value
                     pred_sql = normalize(output)
@@ -148,7 +149,6 @@ if __name__ == "__main__":
                     message_tracks[track_id]["pred_sql"] = pred_sql
 
                     # check the validity of SQL
-                    db = os.path.join(db, db_id, db_id + '.sqlite')
                     error, _ = execute(pred_sql, db)
                     if error != '':
                         try:
@@ -269,7 +269,7 @@ if __name__ == "__main__":
                 af.write(f'{item["label"]}\t{item["db_id"]}' + "\n")
 
     # get execution accuracy
-    command = f'python test-suite-sql-eval/evaluation.py --gold {gold_sql_path} --pred {pred_sql_path} --etype exec --db {db}'
+    command = f'python test-suite-sql-eval/evaluation.py --gold {gold_sql_path} --pred {pred_sql_path} --etype exec --db {db_path}'
     output = subprocess.check_output(command, stderr=subprocess.STDOUT, shell=True)
     with open(f'eval.output', 'w') as f:
         f.write(output.decode("utf-8"))
