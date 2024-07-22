@@ -1,5 +1,5 @@
 import os
-import openai
+from openai import OpenAI
 import sqlite3
 import argparse
 from tqdm import tqdm
@@ -82,7 +82,10 @@ if __name__ == "__main__":
     parser.add_argument('--value_match_method', default='sbert',
                         help='use fuzzy|bert|sbert|word2vec')
     args = parser.parse_args()
-    openai.api_key = args.key
+    client = OpenAI(
+        api_key=args.key,
+        base_url="https://api.openai.com/v1",
+    )
     if args.test_set_name == "kaggledbqa":
         input_path = "data/kaggledbqa/test_with_template.json"
         db_path = "data/kaggledbqa/databases"
@@ -134,13 +137,13 @@ if __name__ == "__main__":
                 for track_id in range(len(message_tracks)):
                     print(f"-------------track {track_id}---gold table list = {item['gold_table_list']}------------------")
                     print(message_tracks[track_id]["messages"][0]["content"])
-                    LLM_return = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo", n=1,
-                        stream=False, temperature=0.0, top_p=1.0,
-                        frequency_penalty=0.0, presence_penalty=0.0,
+                    LLM_return = client.chat.completions.create(
+                        model="gpt-35-turbo-1106",
+                        temperature=0.0, 
+                        top_p=1.0,
                         messages=message_tracks[track_id]["messages"],
                     )
-                    output = LLM_return.choices[0].message['content']
+                    output = LLM_return.choices[0].message.content
                     message_tracks[track_id]["messages"].append({"role": "system", "content": output})
                     token_cnt[0] += LLM_return["usage"]["total_tokens"]
                     # extract SQL from the return value
@@ -161,13 +164,13 @@ if __name__ == "__main__":
                         else:
                             message_tracks[track_id]["messages"].append({"role": "user", "content": f"Error feedback: 1. {error}. Please rewrite the SQL query to make it execute correctly. Only show the SQL query.\n"})
                         print(error)
-                        LLM_return = openai.ChatCompletion.create(
-                            model="gpt-3.5-turbo", n=1,
-                            stream=False, temperature=0.0, top_p=1.0,
-                            frequency_penalty=0.0, presence_penalty=0.0,
+                        LLM_return = client.chat.completions.create(
+                            model="gpt-35-turbo-1106",
+                            temperature=0.0, 
+                            top_p=1.0,
                             messages=message_tracks[track_id]["messages"],
                         )
-                        output = LLM_return.choices[0].message['content']
+                        output = LLM_return.choices[0].message.content
                         token_cnt[0] += LLM_return["usage"]["total_tokens"]
                         pred_sql = normalize(output)
                         print(f"pred sql: {pred_sql}")
@@ -206,13 +209,13 @@ if __name__ == "__main__":
                     if feedback != '':
                         message_tracks[track_id]["messages"].append({"role": "user", "content": f"Database feedback: {feedback}. Please rewrite it, only show the SQL query.\n"})
                         print(feedback)
-                        LLM_return = openai.ChatCompletion.create(
-                            model="gpt-3.5-turbo", n=1,
-                            stream=False, temperature=0.0, top_p=1.0,
-                            frequency_penalty=0.0, presence_penalty=0.0,
+                        LLM_return = client.chat.completions.create(
+                            model="gpt-35-turbo-1106",
+                            temperature=0.0, 
+                            top_p=1.0,
                             messages=message_tracks[track_id]["messages"],
                         )
-                        output = LLM_return.choices[0].message['content']
+                        output = LLM_return.choices[0].message.content
                         token_cnt[0] += LLM_return["usage"]["total_tokens"]
                         pred_sql = normalize(output)
                         print(f"pred sql: {pred_sql}")
