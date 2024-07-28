@@ -1,6 +1,6 @@
 # ZeroNL2SQL
 ## :thought_balloon: Introduction
-This repository contains the code for the paper [``Interleaving Pre-Trained Language Models and Large Language Models for Zero-Shot NL2SQL Generation''](https://arxiv.org/abs/2306.08891).
+This repository contains the code for our VLDB2024 paper “Combining Small Language Models and Large Language Models for Zero-Shot NL2SQL”.
 
 ## :open_file_folder: Data Preparation
 ### Train data
